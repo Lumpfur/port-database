@@ -5,7 +5,7 @@
 -- Dumped from database version 16.3
 -- Dumped by pg_dump version 16.3
 
--- Started on 2026-09-27 22:36:21
+-- Started on 2026-09-29 15:07:29
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -35,7 +35,7 @@ CREATE SCHEMA port_p7;
 
 
 --
--- TOC entry 968 (class 1247 OID 16741)
+-- TOC entry 972 (class 1247 OID 16741)
 -- Name: person_name_type; Type: TYPE; Schema: port_p7; Owner: -
 --
 
@@ -47,8 +47,8 @@ CREATE TYPE port_p7.person_name_type AS (
 
 
 --
--- TOC entry 5380 (class 0 OID 0)
--- Dependencies: 968
+-- TOC entry 5407 (class 0 OID 0)
+-- Dependencies: 972
 -- Name: TYPE person_name_type; Type: COMMENT; Schema: port_p7; Owner: -
 --
 
@@ -73,7 +73,7 @@ CREATE TABLE port_p6.berth (
 
 
 --
--- TOC entry 5381 (class 0 OID 0)
+-- TOC entry 5408 (class 0 OID 0)
 -- Dependencies: 228
 -- Name: TABLE berth; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -82,7 +82,7 @@ COMMENT ON TABLE port_p6.berth IS 'Причал';
 
 
 --
--- TOC entry 5382 (class 0 OID 0)
+-- TOC entry 5409 (class 0 OID 0)
 -- Dependencies: 228
 -- Name: COLUMN berth.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -91,7 +91,7 @@ COMMENT ON COLUMN port_p6.berth.id IS 'Суррогатный первичный
 
 
 --
--- TOC entry 5383 (class 0 OID 0)
+-- TOC entry 5410 (class 0 OID 0)
 -- Dependencies: 228
 -- Name: COLUMN berth.number; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -100,7 +100,7 @@ COMMENT ON COLUMN port_p6.berth.number IS 'Номер';
 
 
 --
--- TOC entry 5384 (class 0 OID 0)
+-- TOC entry 5411 (class 0 OID 0)
 -- Dependencies: 228
 -- Name: COLUMN berth.depth; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -109,7 +109,7 @@ COMMENT ON COLUMN port_p6.berth.depth IS 'Глубина в метрах';
 
 
 --
--- TOC entry 5385 (class 0 OID 0)
+-- TOC entry 5412 (class 0 OID 0)
 -- Dependencies: 228
 -- Name: COLUMN berth.is_active; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -149,7 +149,7 @@ CREATE TABLE port_p6.cargo_operation (
 
 
 --
--- TOC entry 5386 (class 0 OID 0)
+-- TOC entry 5413 (class 0 OID 0)
 -- Dependencies: 244
 -- Name: TABLE cargo_operation; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -158,7 +158,7 @@ COMMENT ON TABLE port_p6.cargo_operation IS 'Грузовая операция';
 
 
 --
--- TOC entry 5387 (class 0 OID 0)
+-- TOC entry 5414 (class 0 OID 0)
 -- Dependencies: 244
 -- Name: COLUMN cargo_operation.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -167,7 +167,7 @@ COMMENT ON COLUMN port_p6.cargo_operation.id IS 'Суррогатный перв
 
 
 --
--- TOC entry 5388 (class 0 OID 0)
+-- TOC entry 5415 (class 0 OID 0)
 -- Dependencies: 244
 -- Name: COLUMN cargo_operation.operation_number; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -176,7 +176,7 @@ COMMENT ON COLUMN port_p6.cargo_operation.operation_number IS 'Номер';
 
 
 --
--- TOC entry 5389 (class 0 OID 0)
+-- TOC entry 5416 (class 0 OID 0)
 -- Dependencies: 244
 -- Name: COLUMN cargo_operation.operation_date; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -185,7 +185,7 @@ COMMENT ON COLUMN port_p6.cargo_operation.operation_date IS 'Дата начал
 
 
 --
--- TOC entry 5390 (class 0 OID 0)
+-- TOC entry 5417 (class 0 OID 0)
 -- Dependencies: 244
 -- Name: COLUMN cargo_operation.vessel_call_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -194,7 +194,7 @@ COMMENT ON COLUMN port_p6.cargo_operation.vessel_call_id IS 'Заход';
 
 
 --
--- TOC entry 5391 (class 0 OID 0)
+-- TOC entry 5418 (class 0 OID 0)
 -- Dependencies: 244
 -- Name: COLUMN cargo_operation.operation_type; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -203,7 +203,7 @@ COMMENT ON COLUMN port_p6.cargo_operation.operation_type IS 'ПОГРУЗКА и
 
 
 --
--- TOC entry 5392 (class 0 OID 0)
+-- TOC entry 5419 (class 0 OID 0)
 -- Dependencies: 244
 -- Name: COLUMN cargo_operation.consignor_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -212,7 +212,7 @@ COMMENT ON COLUMN port_p6.cargo_operation.consignor_id IS 'Отправител�
 
 
 --
--- TOC entry 5393 (class 0 OID 0)
+-- TOC entry 5420 (class 0 OID 0)
 -- Dependencies: 244
 -- Name: COLUMN cargo_operation.consignee_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -250,7 +250,7 @@ CREATE TABLE port_p6.cargo_operation_item (
 
 
 --
--- TOC entry 5394 (class 0 OID 0)
+-- TOC entry 5421 (class 0 OID 0)
 -- Dependencies: 246
 -- Name: TABLE cargo_operation_item; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -259,7 +259,7 @@ COMMENT ON TABLE port_p6.cargo_operation_item IS 'Позиция грузово�
 
 
 --
--- TOC entry 5395 (class 0 OID 0)
+-- TOC entry 5422 (class 0 OID 0)
 -- Dependencies: 246
 -- Name: COLUMN cargo_operation_item.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -268,7 +268,7 @@ COMMENT ON COLUMN port_p6.cargo_operation_item.id IS 'Суррогатный п�
 
 
 --
--- TOC entry 5396 (class 0 OID 0)
+-- TOC entry 5423 (class 0 OID 0)
 -- Dependencies: 246
 -- Name: COLUMN cargo_operation_item.cargo_operation_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -277,7 +277,7 @@ COMMENT ON COLUMN port_p6.cargo_operation_item.cargo_operation_id IS 'Опера
 
 
 --
--- TOC entry 5397 (class 0 OID 0)
+-- TOC entry 5424 (class 0 OID 0)
 -- Dependencies: 246
 -- Name: COLUMN cargo_operation_item.cargo_type_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -286,7 +286,7 @@ COMMENT ON COLUMN port_p6.cargo_operation_item.cargo_type_id IS 'Тип груз
 
 
 --
--- TOC entry 5398 (class 0 OID 0)
+-- TOC entry 5425 (class 0 OID 0)
 -- Dependencies: 246
 -- Name: COLUMN cargo_operation_item.quantity; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -295,7 +295,7 @@ COMMENT ON COLUMN port_p6.cargo_operation_item.quantity IS 'Количество
 
 
 --
--- TOC entry 5399 (class 0 OID 0)
+-- TOC entry 5426 (class 0 OID 0)
 -- Dependencies: 246
 -- Name: COLUMN cargo_operation_item.unit_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -332,7 +332,7 @@ CREATE TABLE port_p6.cargo_type (
 
 
 --
--- TOC entry 5400 (class 0 OID 0)
+-- TOC entry 5427 (class 0 OID 0)
 -- Dependencies: 220
 -- Name: TABLE cargo_type; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -341,7 +341,7 @@ COMMENT ON TABLE port_p6.cargo_type IS 'Тип груза';
 
 
 --
--- TOC entry 5401 (class 0 OID 0)
+-- TOC entry 5428 (class 0 OID 0)
 -- Dependencies: 220
 -- Name: COLUMN cargo_type.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -350,7 +350,7 @@ COMMENT ON COLUMN port_p6.cargo_type.id IS 'Суррогатный первич�
 
 
 --
--- TOC entry 5402 (class 0 OID 0)
+-- TOC entry 5429 (class 0 OID 0)
 -- Dependencies: 220
 -- Name: COLUMN cargo_type.name; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -359,7 +359,7 @@ COMMENT ON COLUMN port_p6.cargo_type.name IS 'Наименование';
 
 
 --
--- TOC entry 5403 (class 0 OID 0)
+-- TOC entry 5430 (class 0 OID 0)
 -- Dependencies: 220
 -- Name: COLUMN cargo_type.imo_code; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -368,7 +368,7 @@ COMMENT ON COLUMN port_p6.cargo_type.imo_code IS 'Класс опасности 
 
 
 --
--- TOC entry 5404 (class 0 OID 0)
+-- TOC entry 5431 (class 0 OID 0)
 -- Dependencies: 220
 -- Name: COLUMN cargo_type.is_dangerous; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -405,7 +405,7 @@ CREATE TABLE port_p6.consignee (
 
 
 --
--- TOC entry 5405 (class 0 OID 0)
+-- TOC entry 5432 (class 0 OID 0)
 -- Dependencies: 234
 -- Name: TABLE consignee; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -414,7 +414,7 @@ COMMENT ON TABLE port_p6.consignee IS 'Грузополучатель';
 
 
 --
--- TOC entry 5406 (class 0 OID 0)
+-- TOC entry 5433 (class 0 OID 0)
 -- Dependencies: 234
 -- Name: COLUMN consignee.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -423,7 +423,7 @@ COMMENT ON COLUMN port_p6.consignee.id IS 'Суррогатный первичн
 
 
 --
--- TOC entry 5407 (class 0 OID 0)
+-- TOC entry 5434 (class 0 OID 0)
 -- Dependencies: 234
 -- Name: COLUMN consignee.name; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -432,7 +432,7 @@ COMMENT ON COLUMN port_p6.consignee.name IS 'Наименование';
 
 
 --
--- TOC entry 5408 (class 0 OID 0)
+-- TOC entry 5435 (class 0 OID 0)
 -- Dependencies: 234
 -- Name: COLUMN consignee.inn; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -441,7 +441,7 @@ COMMENT ON COLUMN port_p6.consignee.inn IS 'ИНН резидента';
 
 
 --
--- TOC entry 5409 (class 0 OID 0)
+-- TOC entry 5436 (class 0 OID 0)
 -- Dependencies: 234
 -- Name: COLUMN consignee.phone; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -478,7 +478,7 @@ CREATE TABLE port_p6.consignor (
 
 
 --
--- TOC entry 5410 (class 0 OID 0)
+-- TOC entry 5437 (class 0 OID 0)
 -- Dependencies: 232
 -- Name: TABLE consignor; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -487,7 +487,7 @@ COMMENT ON TABLE port_p6.consignor IS 'Грузоотправитель';
 
 
 --
--- TOC entry 5411 (class 0 OID 0)
+-- TOC entry 5438 (class 0 OID 0)
 -- Dependencies: 232
 -- Name: COLUMN consignor.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -496,7 +496,7 @@ COMMENT ON COLUMN port_p6.consignor.id IS 'Суррогатный первичн
 
 
 --
--- TOC entry 5412 (class 0 OID 0)
+-- TOC entry 5439 (class 0 OID 0)
 -- Dependencies: 232
 -- Name: COLUMN consignor.name; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -505,7 +505,7 @@ COMMENT ON COLUMN port_p6.consignor.name IS 'Наименование';
 
 
 --
--- TOC entry 5413 (class 0 OID 0)
+-- TOC entry 5440 (class 0 OID 0)
 -- Dependencies: 232
 -- Name: COLUMN consignor.inn; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -514,7 +514,7 @@ COMMENT ON COLUMN port_p6.consignor.inn IS 'ИНН резидента';
 
 
 --
--- TOC entry 5414 (class 0 OID 0)
+-- TOC entry 5441 (class 0 OID 0)
 -- Dependencies: 232
 -- Name: COLUMN consignor.phone; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -553,7 +553,7 @@ CREATE TABLE port_p6.employee (
 
 
 --
--- TOC entry 5415 (class 0 OID 0)
+-- TOC entry 5442 (class 0 OID 0)
 -- Dependencies: 236
 -- Name: TABLE employee; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -562,7 +562,7 @@ COMMENT ON TABLE port_p6.employee IS 'Сотрудник';
 
 
 --
--- TOC entry 5416 (class 0 OID 0)
+-- TOC entry 5443 (class 0 OID 0)
 -- Dependencies: 236
 -- Name: COLUMN employee.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -571,7 +571,7 @@ COMMENT ON COLUMN port_p6.employee.id IS 'Суррогатный первичн�
 
 
 --
--- TOC entry 5417 (class 0 OID 0)
+-- TOC entry 5444 (class 0 OID 0)
 -- Dependencies: 236
 -- Name: COLUMN employee.full_name; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -580,7 +580,7 @@ COMMENT ON COLUMN port_p6.employee.full_name IS 'ФИО';
 
 
 --
--- TOC entry 5418 (class 0 OID 0)
+-- TOC entry 5445 (class 0 OID 0)
 -- Dependencies: 236
 -- Name: COLUMN employee."position"; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -589,7 +589,7 @@ COMMENT ON COLUMN port_p6.employee."position" IS 'Должность';
 
 
 --
--- TOC entry 5419 (class 0 OID 0)
+-- TOC entry 5446 (class 0 OID 0)
 -- Dependencies: 236
 -- Name: COLUMN employee.employee_number; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -598,7 +598,7 @@ COMMENT ON COLUMN port_p6.employee.employee_number IS 'Табельный ном
 
 
 --
--- TOC entry 5420 (class 0 OID 0)
+-- TOC entry 5447 (class 0 OID 0)
 -- Dependencies: 236
 -- Name: COLUMN employee.login; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -607,7 +607,7 @@ COMMENT ON COLUMN port_p6.employee.login IS 'Логин';
 
 
 --
--- TOC entry 5421 (class 0 OID 0)
+-- TOC entry 5448 (class 0 OID 0)
 -- Dependencies: 236
 -- Name: COLUMN employee.password_hash; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -644,7 +644,7 @@ CREATE TABLE port_p6.fee_type (
 
 
 --
--- TOC entry 5422 (class 0 OID 0)
+-- TOC entry 5449 (class 0 OID 0)
 -- Dependencies: 226
 -- Name: TABLE fee_type; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -653,7 +653,7 @@ COMMENT ON TABLE port_p6.fee_type IS 'Вид сбора';
 
 
 --
--- TOC entry 5423 (class 0 OID 0)
+-- TOC entry 5450 (class 0 OID 0)
 -- Dependencies: 226
 -- Name: COLUMN fee_type.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -662,7 +662,7 @@ COMMENT ON COLUMN port_p6.fee_type.id IS 'Суррогатный первичн�
 
 
 --
--- TOC entry 5424 (class 0 OID 0)
+-- TOC entry 5451 (class 0 OID 0)
 -- Dependencies: 226
 -- Name: COLUMN fee_type.name; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -671,7 +671,7 @@ COMMENT ON COLUMN port_p6.fee_type.name IS 'Наименование';
 
 
 --
--- TOC entry 5425 (class 0 OID 0)
+-- TOC entry 5452 (class 0 OID 0)
 -- Dependencies: 226
 -- Name: COLUMN fee_type.base_rate; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -680,7 +680,7 @@ COMMENT ON COLUMN port_p6.fee_type.base_rate IS 'Базовая ставка';
 
 
 --
--- TOC entry 5426 (class 0 OID 0)
+-- TOC entry 5453 (class 0 OID 0)
 -- Dependencies: 226
 -- Name: COLUMN fee_type.unit_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -717,7 +717,7 @@ CREATE TABLE port_p6.ship_owner (
 
 
 --
--- TOC entry 5427 (class 0 OID 0)
+-- TOC entry 5454 (class 0 OID 0)
 -- Dependencies: 230
 -- Name: TABLE ship_owner; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -726,7 +726,7 @@ COMMENT ON TABLE port_p6.ship_owner IS 'Судовладелец';
 
 
 --
--- TOC entry 5428 (class 0 OID 0)
+-- TOC entry 5455 (class 0 OID 0)
 -- Dependencies: 230
 -- Name: COLUMN ship_owner.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -735,7 +735,7 @@ COMMENT ON COLUMN port_p6.ship_owner.id IS 'Суррогатный первич�
 
 
 --
--- TOC entry 5429 (class 0 OID 0)
+-- TOC entry 5456 (class 0 OID 0)
 -- Dependencies: 230
 -- Name: COLUMN ship_owner.name; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -744,7 +744,7 @@ COMMENT ON COLUMN port_p6.ship_owner.name IS 'Наименование';
 
 
 --
--- TOC entry 5430 (class 0 OID 0)
+-- TOC entry 5457 (class 0 OID 0)
 -- Dependencies: 230
 -- Name: COLUMN ship_owner.country; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -753,7 +753,7 @@ COMMENT ON COLUMN port_p6.ship_owner.country IS 'Страна';
 
 
 --
--- TOC entry 5431 (class 0 OID 0)
+-- TOC entry 5458 (class 0 OID 0)
 -- Dependencies: 230
 -- Name: COLUMN ship_owner.phone; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -793,7 +793,7 @@ CREATE TABLE port_p6.stock_balance (
 
 
 --
--- TOC entry 5432 (class 0 OID 0)
+-- TOC entry 5459 (class 0 OID 0)
 -- Dependencies: 252
 -- Name: TABLE stock_balance; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -802,7 +802,7 @@ COMMENT ON TABLE port_p6.stock_balance IS 'Текущий остаток';
 
 
 --
--- TOC entry 5433 (class 0 OID 0)
+-- TOC entry 5460 (class 0 OID 0)
 -- Dependencies: 252
 -- Name: COLUMN stock_balance.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -811,7 +811,7 @@ COMMENT ON COLUMN port_p6.stock_balance.id IS 'Суррогатный перви
 
 
 --
--- TOC entry 5434 (class 0 OID 0)
+-- TOC entry 5461 (class 0 OID 0)
 -- Dependencies: 252
 -- Name: COLUMN stock_balance.cargo_type_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -820,7 +820,7 @@ COMMENT ON COLUMN port_p6.stock_balance.cargo_type_id IS 'Тип груза';
 
 
 --
--- TOC entry 5435 (class 0 OID 0)
+-- TOC entry 5462 (class 0 OID 0)
 -- Dependencies: 252
 -- Name: COLUMN stock_balance.quantity; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -829,7 +829,7 @@ COMMENT ON COLUMN port_p6.stock_balance.quantity IS 'Остаток';
 
 
 --
--- TOC entry 5436 (class 0 OID 0)
+-- TOC entry 5463 (class 0 OID 0)
 -- Dependencies: 252
 -- Name: COLUMN stock_balance.unit_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -838,7 +838,7 @@ COMMENT ON COLUMN port_p6.stock_balance.unit_id IS 'Единица измере�
 
 
 --
--- TOC entry 5437 (class 0 OID 0)
+-- TOC entry 5464 (class 0 OID 0)
 -- Dependencies: 252
 -- Name: COLUMN stock_balance.location; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -847,7 +847,7 @@ COMMENT ON COLUMN port_p6.stock_balance.location IS 'Место хранения
 
 
 --
--- TOC entry 5438 (class 0 OID 0)
+-- TOC entry 5465 (class 0 OID 0)
 -- Dependencies: 252
 -- Name: COLUMN stock_balance.batch_number; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -856,7 +856,7 @@ COMMENT ON COLUMN port_p6.stock_balance.batch_number IS 'Номер партии
 
 
 --
--- TOC entry 5439 (class 0 OID 0)
+-- TOC entry 5466 (class 0 OID 0)
 -- Dependencies: 252
 -- Name: COLUMN stock_balance.last_updated; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -892,7 +892,7 @@ CREATE TABLE port_p6.unit (
 
 
 --
--- TOC entry 5440 (class 0 OID 0)
+-- TOC entry 5467 (class 0 OID 0)
 -- Dependencies: 224
 -- Name: TABLE unit; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -901,7 +901,7 @@ COMMENT ON TABLE port_p6.unit IS 'Единица измерения';
 
 
 --
--- TOC entry 5441 (class 0 OID 0)
+-- TOC entry 5468 (class 0 OID 0)
 -- Dependencies: 224
 -- Name: COLUMN unit.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -910,7 +910,7 @@ COMMENT ON COLUMN port_p6.unit.id IS 'Суррогатный первичный 
 
 
 --
--- TOC entry 5442 (class 0 OID 0)
+-- TOC entry 5469 (class 0 OID 0)
 -- Dependencies: 224
 -- Name: COLUMN unit.name; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -919,7 +919,7 @@ COMMENT ON COLUMN port_p6.unit.name IS 'Наименование';
 
 
 --
--- TOC entry 5443 (class 0 OID 0)
+-- TOC entry 5470 (class 0 OID 0)
 -- Dependencies: 224
 -- Name: COLUMN unit.short_name; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -961,7 +961,7 @@ CREATE TABLE port_p6.vessel (
 
 
 --
--- TOC entry 5444 (class 0 OID 0)
+-- TOC entry 5471 (class 0 OID 0)
 -- Dependencies: 238
 -- Name: TABLE vessel; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -970,7 +970,7 @@ COMMENT ON TABLE port_p6.vessel IS 'Судно';
 
 
 --
--- TOC entry 5445 (class 0 OID 0)
+-- TOC entry 5472 (class 0 OID 0)
 -- Dependencies: 238
 -- Name: COLUMN vessel.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -979,7 +979,7 @@ COMMENT ON COLUMN port_p6.vessel.id IS 'Суррогатный первичны�
 
 
 --
--- TOC entry 5446 (class 0 OID 0)
+-- TOC entry 5473 (class 0 OID 0)
 -- Dependencies: 238
 -- Name: COLUMN vessel.name; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -988,7 +988,7 @@ COMMENT ON COLUMN port_p6.vessel.name IS 'Название';
 
 
 --
--- TOC entry 5447 (class 0 OID 0)
+-- TOC entry 5474 (class 0 OID 0)
 -- Dependencies: 238
 -- Name: COLUMN vessel.call_sign; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -997,7 +997,7 @@ COMMENT ON COLUMN port_p6.vessel.call_sign IS 'Позывной';
 
 
 --
--- TOC entry 5448 (class 0 OID 0)
+-- TOC entry 5475 (class 0 OID 0)
 -- Dependencies: 238
 -- Name: COLUMN vessel.imo_number; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1006,7 +1006,7 @@ COMMENT ON COLUMN port_p6.vessel.imo_number IS 'Номер ИМО';
 
 
 --
--- TOC entry 5449 (class 0 OID 0)
+-- TOC entry 5476 (class 0 OID 0)
 -- Dependencies: 238
 -- Name: COLUMN vessel.flag; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1015,7 +1015,7 @@ COMMENT ON COLUMN port_p6.vessel.flag IS 'Страна флага';
 
 
 --
--- TOC entry 5450 (class 0 OID 0)
+-- TOC entry 5477 (class 0 OID 0)
 -- Dependencies: 238
 -- Name: COLUMN vessel.vessel_type_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1024,7 +1024,7 @@ COMMENT ON COLUMN port_p6.vessel.vessel_type_id IS 'Тип судна';
 
 
 --
--- TOC entry 5451 (class 0 OID 0)
+-- TOC entry 5478 (class 0 OID 0)
 -- Dependencies: 238
 -- Name: COLUMN vessel.ship_owner_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1033,7 +1033,7 @@ COMMENT ON COLUMN port_p6.vessel.ship_owner_id IS 'Судовладелец';
 
 
 --
--- TOC entry 5452 (class 0 OID 0)
+-- TOC entry 5479 (class 0 OID 0)
 -- Dependencies: 238
 -- Name: COLUMN vessel.vessel_status_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1042,7 +1042,7 @@ COMMENT ON COLUMN port_p6.vessel.vessel_status_id IS 'Текущий стату�
 
 
 --
--- TOC entry 5453 (class 0 OID 0)
+-- TOC entry 5480 (class 0 OID 0)
 -- Dependencies: 238
 -- Name: COLUMN vessel.gross_tonnage; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1067,7 +1067,7 @@ CREATE TABLE port_p6.vessel_call (
 
 
 --
--- TOC entry 5454 (class 0 OID 0)
+-- TOC entry 5481 (class 0 OID 0)
 -- Dependencies: 240
 -- Name: TABLE vessel_call; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1076,7 +1076,7 @@ COMMENT ON TABLE port_p6.vessel_call IS 'Заход судна';
 
 
 --
--- TOC entry 5455 (class 0 OID 0)
+-- TOC entry 5482 (class 0 OID 0)
 -- Dependencies: 240
 -- Name: COLUMN vessel_call.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1085,7 +1085,7 @@ COMMENT ON COLUMN port_p6.vessel_call.id IS 'Суррогатный первич
 
 
 --
--- TOC entry 5456 (class 0 OID 0)
+-- TOC entry 5483 (class 0 OID 0)
 -- Dependencies: 240
 -- Name: COLUMN vessel_call.arrival_datetime; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1094,7 +1094,7 @@ COMMENT ON COLUMN port_p6.vessel_call.arrival_datetime IS 'Время прибы
 
 
 --
--- TOC entry 5457 (class 0 OID 0)
+-- TOC entry 5484 (class 0 OID 0)
 -- Dependencies: 240
 -- Name: COLUMN vessel_call.vessel_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1103,7 +1103,7 @@ COMMENT ON COLUMN port_p6.vessel_call.vessel_id IS 'Судно';
 
 
 --
--- TOC entry 5458 (class 0 OID 0)
+-- TOC entry 5485 (class 0 OID 0)
 -- Dependencies: 240
 -- Name: COLUMN vessel_call.berth_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1112,7 +1112,7 @@ COMMENT ON COLUMN port_p6.vessel_call.berth_id IS 'Причал';
 
 
 --
--- TOC entry 5459 (class 0 OID 0)
+-- TOC entry 5486 (class 0 OID 0)
 -- Dependencies: 240
 -- Name: COLUMN vessel_call.purpose; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1121,7 +1121,7 @@ COMMENT ON COLUMN port_p6.vessel_call.purpose IS 'Цель захода';
 
 
 --
--- TOC entry 5460 (class 0 OID 0)
+-- TOC entry 5487 (class 0 OID 0)
 -- Dependencies: 240
 -- Name: COLUMN vessel_call.dispatcher_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1130,7 +1130,7 @@ COMMENT ON COLUMN port_p6.vessel_call.dispatcher_id IS 'Диспетчер';
 
 
 --
--- TOC entry 5461 (class 0 OID 0)
+-- TOC entry 5488 (class 0 OID 0)
 -- Dependencies: 240
 -- Name: COLUMN vessel_call.departure_datetime; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1169,7 +1169,7 @@ CREATE TABLE port_p6.vessel_call_service (
 
 
 --
--- TOC entry 5462 (class 0 OID 0)
+-- TOC entry 5489 (class 0 OID 0)
 -- Dependencies: 242
 -- Name: TABLE vessel_call_service; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1178,7 +1178,7 @@ COMMENT ON TABLE port_p6.vessel_call_service IS 'Позиция захода';
 
 
 --
--- TOC entry 5463 (class 0 OID 0)
+-- TOC entry 5490 (class 0 OID 0)
 -- Dependencies: 242
 -- Name: COLUMN vessel_call_service.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1187,7 +1187,7 @@ COMMENT ON COLUMN port_p6.vessel_call_service.id IS 'Суррогатный пе
 
 
 --
--- TOC entry 5464 (class 0 OID 0)
+-- TOC entry 5491 (class 0 OID 0)
 -- Dependencies: 242
 -- Name: COLUMN vessel_call_service.vessel_call_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1196,7 +1196,7 @@ COMMENT ON COLUMN port_p6.vessel_call_service.vessel_call_id IS 'Заход';
 
 
 --
--- TOC entry 5465 (class 0 OID 0)
+-- TOC entry 5492 (class 0 OID 0)
 -- Dependencies: 242
 -- Name: COLUMN vessel_call_service.fee_type_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1205,7 +1205,7 @@ COMMENT ON COLUMN port_p6.vessel_call_service.fee_type_id IS 'Вид сбора'
 
 
 --
--- TOC entry 5466 (class 0 OID 0)
+-- TOC entry 5493 (class 0 OID 0)
 -- Dependencies: 242
 -- Name: COLUMN vessel_call_service.quantity; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1214,7 +1214,7 @@ COMMENT ON COLUMN port_p6.vessel_call_service.quantity IS 'Количество'
 
 
 --
--- TOC entry 5467 (class 0 OID 0)
+-- TOC entry 5494 (class 0 OID 0)
 -- Dependencies: 242
 -- Name: COLUMN vessel_call_service.rate; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1223,7 +1223,7 @@ COMMENT ON COLUMN port_p6.vessel_call_service.rate IS 'Историческая 
 
 
 --
--- TOC entry 5468 (class 0 OID 0)
+-- TOC entry 5495 (class 0 OID 0)
 -- Dependencies: 242
 -- Name: COLUMN vessel_call_service.amount; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1273,7 +1273,7 @@ CREATE TABLE port_p6.vessel_status (
 
 
 --
--- TOC entry 5469 (class 0 OID 0)
+-- TOC entry 5496 (class 0 OID 0)
 -- Dependencies: 222
 -- Name: TABLE vessel_status; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1282,7 +1282,7 @@ COMMENT ON TABLE port_p6.vessel_status IS 'Статус судна';
 
 
 --
--- TOC entry 5470 (class 0 OID 0)
+-- TOC entry 5497 (class 0 OID 0)
 -- Dependencies: 222
 -- Name: COLUMN vessel_status.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1291,7 +1291,7 @@ COMMENT ON COLUMN port_p6.vessel_status.id IS 'Суррогатный перви
 
 
 --
--- TOC entry 5471 (class 0 OID 0)
+-- TOC entry 5498 (class 0 OID 0)
 -- Dependencies: 222
 -- Name: COLUMN vessel_status.name; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1327,7 +1327,7 @@ CREATE TABLE port_p6.vessel_type (
 
 
 --
--- TOC entry 5472 (class 0 OID 0)
+-- TOC entry 5499 (class 0 OID 0)
 -- Dependencies: 218
 -- Name: TABLE vessel_type; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1336,7 +1336,7 @@ COMMENT ON TABLE port_p6.vessel_type IS 'Тип судна';
 
 
 --
--- TOC entry 5473 (class 0 OID 0)
+-- TOC entry 5500 (class 0 OID 0)
 -- Dependencies: 218
 -- Name: COLUMN vessel_type.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1345,7 +1345,7 @@ COMMENT ON COLUMN port_p6.vessel_type.id IS 'Суррогатный первич
 
 
 --
--- TOC entry 5474 (class 0 OID 0)
+-- TOC entry 5501 (class 0 OID 0)
 -- Dependencies: 218
 -- Name: COLUMN vessel_type.name; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1354,7 +1354,7 @@ COMMENT ON COLUMN port_p6.vessel_type.name IS 'Наименование';
 
 
 --
--- TOC entry 5475 (class 0 OID 0)
+-- TOC entry 5502 (class 0 OID 0)
 -- Dependencies: 218
 -- Name: COLUMN vessel_type.description; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1394,7 +1394,7 @@ CREATE TABLE port_p6.warehouse_order (
 
 
 --
--- TOC entry 5476 (class 0 OID 0)
+-- TOC entry 5503 (class 0 OID 0)
 -- Dependencies: 248
 -- Name: TABLE warehouse_order; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1403,7 +1403,7 @@ COMMENT ON TABLE port_p6.warehouse_order IS 'Складской ордер';
 
 
 --
--- TOC entry 5477 (class 0 OID 0)
+-- TOC entry 5504 (class 0 OID 0)
 -- Dependencies: 248
 -- Name: COLUMN warehouse_order.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1412,7 +1412,7 @@ COMMENT ON COLUMN port_p6.warehouse_order.id IS 'Суррогатный перв
 
 
 --
--- TOC entry 5478 (class 0 OID 0)
+-- TOC entry 5505 (class 0 OID 0)
 -- Dependencies: 248
 -- Name: COLUMN warehouse_order.order_number; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1421,7 +1421,7 @@ COMMENT ON COLUMN port_p6.warehouse_order.order_number IS 'Номер';
 
 
 --
--- TOC entry 5479 (class 0 OID 0)
+-- TOC entry 5506 (class 0 OID 0)
 -- Dependencies: 248
 -- Name: COLUMN warehouse_order.created_at; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1430,7 +1430,7 @@ COMMENT ON COLUMN port_p6.warehouse_order.created_at IS 'Дата создани
 
 
 --
--- TOC entry 5480 (class 0 OID 0)
+-- TOC entry 5507 (class 0 OID 0)
 -- Dependencies: 248
 -- Name: COLUMN warehouse_order.order_type; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1439,7 +1439,7 @@ COMMENT ON COLUMN port_p6.warehouse_order.order_type IS 'ПРИХОД РАСХО
 
 
 --
--- TOC entry 5481 (class 0 OID 0)
+-- TOC entry 5508 (class 0 OID 0)
 -- Dependencies: 248
 -- Name: COLUMN warehouse_order.consignor_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1448,7 +1448,7 @@ COMMENT ON COLUMN port_p6.warehouse_order.consignor_id IS 'Контрагент 
 
 
 --
--- TOC entry 5482 (class 0 OID 0)
+-- TOC entry 5509 (class 0 OID 0)
 -- Dependencies: 248
 -- Name: COLUMN warehouse_order.consignee_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1457,7 +1457,7 @@ COMMENT ON COLUMN port_p6.warehouse_order.consignee_id IS 'Контрагент 
 
 
 --
--- TOC entry 5483 (class 0 OID 0)
+-- TOC entry 5510 (class 0 OID 0)
 -- Dependencies: 248
 -- Name: COLUMN warehouse_order.responsible_emp_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1497,7 +1497,7 @@ CREATE TABLE port_p6.warehouse_order_item (
 
 
 --
--- TOC entry 5484 (class 0 OID 0)
+-- TOC entry 5511 (class 0 OID 0)
 -- Dependencies: 250
 -- Name: TABLE warehouse_order_item; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1506,7 +1506,7 @@ COMMENT ON TABLE port_p6.warehouse_order_item IS 'Позиция складск�
 
 
 --
--- TOC entry 5485 (class 0 OID 0)
+-- TOC entry 5512 (class 0 OID 0)
 -- Dependencies: 250
 -- Name: COLUMN warehouse_order_item.id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1515,7 +1515,7 @@ COMMENT ON COLUMN port_p6.warehouse_order_item.id IS 'Суррогатный п�
 
 
 --
--- TOC entry 5486 (class 0 OID 0)
+-- TOC entry 5513 (class 0 OID 0)
 -- Dependencies: 250
 -- Name: COLUMN warehouse_order_item.warehouse_order_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1524,7 +1524,7 @@ COMMENT ON COLUMN port_p6.warehouse_order_item.warehouse_order_id IS 'Ордер
 
 
 --
--- TOC entry 5487 (class 0 OID 0)
+-- TOC entry 5514 (class 0 OID 0)
 -- Dependencies: 250
 -- Name: COLUMN warehouse_order_item.cargo_type_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1533,7 +1533,7 @@ COMMENT ON COLUMN port_p6.warehouse_order_item.cargo_type_id IS 'Тип груз
 
 
 --
--- TOC entry 5488 (class 0 OID 0)
+-- TOC entry 5515 (class 0 OID 0)
 -- Dependencies: 250
 -- Name: COLUMN warehouse_order_item.quantity; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1542,7 +1542,7 @@ COMMENT ON COLUMN port_p6.warehouse_order_item.quantity IS 'Количество
 
 
 --
--- TOC entry 5489 (class 0 OID 0)
+-- TOC entry 5516 (class 0 OID 0)
 -- Dependencies: 250
 -- Name: COLUMN warehouse_order_item.unit_id; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1551,7 +1551,7 @@ COMMENT ON COLUMN port_p6.warehouse_order_item.unit_id IS 'Единица изм
 
 
 --
--- TOC entry 5490 (class 0 OID 0)
+-- TOC entry 5517 (class 0 OID 0)
 -- Dependencies: 250
 -- Name: COLUMN warehouse_order_item.location; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1560,7 +1560,7 @@ COMMENT ON COLUMN port_p6.warehouse_order_item.location IS 'Место хран�
 
 
 --
--- TOC entry 5491 (class 0 OID 0)
+-- TOC entry 5518 (class 0 OID 0)
 -- Dependencies: 250
 -- Name: COLUMN warehouse_order_item.batch_number; Type: COMMENT; Schema: port_p6; Owner: -
 --
@@ -1599,7 +1599,7 @@ CREATE TABLE port_p7.berth (
 
 
 --
--- TOC entry 5492 (class 0 OID 0)
+-- TOC entry 5519 (class 0 OID 0)
 -- Dependencies: 265
 -- Name: TABLE berth; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1608,7 +1608,7 @@ COMMENT ON TABLE port_p7.berth IS 'Причал';
 
 
 --
--- TOC entry 5493 (class 0 OID 0)
+-- TOC entry 5520 (class 0 OID 0)
 -- Dependencies: 265
 -- Name: COLUMN berth.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1617,7 +1617,7 @@ COMMENT ON COLUMN port_p7.berth.id IS 'Суррогатный первичный
 
 
 --
--- TOC entry 5494 (class 0 OID 0)
+-- TOC entry 5521 (class 0 OID 0)
 -- Dependencies: 265
 -- Name: COLUMN berth.number; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1626,7 +1626,7 @@ COMMENT ON COLUMN port_p7.berth.number IS 'Номер';
 
 
 --
--- TOC entry 5495 (class 0 OID 0)
+-- TOC entry 5522 (class 0 OID 0)
 -- Dependencies: 265
 -- Name: COLUMN berth.depth; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1635,7 +1635,7 @@ COMMENT ON COLUMN port_p7.berth.depth IS 'Глубина в метрах';
 
 
 --
--- TOC entry 5496 (class 0 OID 0)
+-- TOC entry 5523 (class 0 OID 0)
 -- Dependencies: 265
 -- Name: COLUMN berth.is_active; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1677,7 +1677,7 @@ CREATE TABLE port_p7.cargo_operation (
 
 
 --
--- TOC entry 5497 (class 0 OID 0)
+-- TOC entry 5524 (class 0 OID 0)
 -- Dependencies: 281
 -- Name: TABLE cargo_operation; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1686,7 +1686,7 @@ COMMENT ON TABLE port_p7.cargo_operation IS 'Грузовая операция';
 
 
 --
--- TOC entry 5498 (class 0 OID 0)
+-- TOC entry 5525 (class 0 OID 0)
 -- Dependencies: 281
 -- Name: COLUMN cargo_operation.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1695,7 +1695,7 @@ COMMENT ON COLUMN port_p7.cargo_operation.id IS 'Суррогатный перв
 
 
 --
--- TOC entry 5499 (class 0 OID 0)
+-- TOC entry 5526 (class 0 OID 0)
 -- Dependencies: 281
 -- Name: COLUMN cargo_operation.operation_number; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1704,7 +1704,7 @@ COMMENT ON COLUMN port_p7.cargo_operation.operation_number IS 'Номер';
 
 
 --
--- TOC entry 5500 (class 0 OID 0)
+-- TOC entry 5527 (class 0 OID 0)
 -- Dependencies: 281
 -- Name: COLUMN cargo_operation.operation_date; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1713,7 +1713,7 @@ COMMENT ON COLUMN port_p7.cargo_operation.operation_date IS 'Дата начал
 
 
 --
--- TOC entry 5501 (class 0 OID 0)
+-- TOC entry 5528 (class 0 OID 0)
 -- Dependencies: 281
 -- Name: COLUMN cargo_operation.vessel_call_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1722,7 +1722,7 @@ COMMENT ON COLUMN port_p7.cargo_operation.vessel_call_id IS 'Заход';
 
 
 --
--- TOC entry 5502 (class 0 OID 0)
+-- TOC entry 5529 (class 0 OID 0)
 -- Dependencies: 281
 -- Name: COLUMN cargo_operation.operation_type; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1731,7 +1731,7 @@ COMMENT ON COLUMN port_p7.cargo_operation.operation_type IS 'ПОГРУЗКА и
 
 
 --
--- TOC entry 5503 (class 0 OID 0)
+-- TOC entry 5530 (class 0 OID 0)
 -- Dependencies: 281
 -- Name: COLUMN cargo_operation.consignor_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1740,7 +1740,7 @@ COMMENT ON COLUMN port_p7.cargo_operation.consignor_id IS 'Отправител�
 
 
 --
--- TOC entry 5504 (class 0 OID 0)
+-- TOC entry 5531 (class 0 OID 0)
 -- Dependencies: 281
 -- Name: COLUMN cargo_operation.consignee_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1779,7 +1779,7 @@ CREATE TABLE port_p7.cargo_operation_item (
 
 
 --
--- TOC entry 5505 (class 0 OID 0)
+-- TOC entry 5532 (class 0 OID 0)
 -- Dependencies: 283
 -- Name: TABLE cargo_operation_item; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1788,7 +1788,7 @@ COMMENT ON TABLE port_p7.cargo_operation_item IS 'Позиция грузово�
 
 
 --
--- TOC entry 5506 (class 0 OID 0)
+-- TOC entry 5533 (class 0 OID 0)
 -- Dependencies: 283
 -- Name: COLUMN cargo_operation_item.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1797,7 +1797,7 @@ COMMENT ON COLUMN port_p7.cargo_operation_item.id IS 'Суррогатный п�
 
 
 --
--- TOC entry 5507 (class 0 OID 0)
+-- TOC entry 5534 (class 0 OID 0)
 -- Dependencies: 283
 -- Name: COLUMN cargo_operation_item.cargo_operation_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1806,7 +1806,7 @@ COMMENT ON COLUMN port_p7.cargo_operation_item.cargo_operation_id IS 'Опера
 
 
 --
--- TOC entry 5508 (class 0 OID 0)
+-- TOC entry 5535 (class 0 OID 0)
 -- Dependencies: 283
 -- Name: COLUMN cargo_operation_item.cargo_type_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1815,7 +1815,7 @@ COMMENT ON COLUMN port_p7.cargo_operation_item.cargo_type_id IS 'Тип груз
 
 
 --
--- TOC entry 5509 (class 0 OID 0)
+-- TOC entry 5536 (class 0 OID 0)
 -- Dependencies: 283
 -- Name: COLUMN cargo_operation_item.quantity; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1824,7 +1824,7 @@ COMMENT ON COLUMN port_p7.cargo_operation_item.quantity IS 'Количество
 
 
 --
--- TOC entry 5510 (class 0 OID 0)
+-- TOC entry 5537 (class 0 OID 0)
 -- Dependencies: 283
 -- Name: COLUMN cargo_operation_item.unit_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1863,7 +1863,7 @@ CREATE TABLE port_p7.cargo_type (
 
 
 --
--- TOC entry 5511 (class 0 OID 0)
+-- TOC entry 5538 (class 0 OID 0)
 -- Dependencies: 257
 -- Name: TABLE cargo_type; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1872,7 +1872,7 @@ COMMENT ON TABLE port_p7.cargo_type IS 'Тип груза';
 
 
 --
--- TOC entry 5512 (class 0 OID 0)
+-- TOC entry 5539 (class 0 OID 0)
 -- Dependencies: 257
 -- Name: COLUMN cargo_type.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1881,7 +1881,7 @@ COMMENT ON COLUMN port_p7.cargo_type.id IS 'Суррогатный первич�
 
 
 --
--- TOC entry 5513 (class 0 OID 0)
+-- TOC entry 5540 (class 0 OID 0)
 -- Dependencies: 257
 -- Name: COLUMN cargo_type.name; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1890,7 +1890,7 @@ COMMENT ON COLUMN port_p7.cargo_type.name IS 'Наименование';
 
 
 --
--- TOC entry 5514 (class 0 OID 0)
+-- TOC entry 5541 (class 0 OID 0)
 -- Dependencies: 257
 -- Name: COLUMN cargo_type.imo_code; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1899,7 +1899,7 @@ COMMENT ON COLUMN port_p7.cargo_type.imo_code IS 'Класс опасности 
 
 
 --
--- TOC entry 5515 (class 0 OID 0)
+-- TOC entry 5542 (class 0 OID 0)
 -- Dependencies: 257
 -- Name: COLUMN cargo_type.is_dangerous; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1939,7 +1939,7 @@ CREATE TABLE port_p7.consignee (
 
 
 --
--- TOC entry 5516 (class 0 OID 0)
+-- TOC entry 5543 (class 0 OID 0)
 -- Dependencies: 271
 -- Name: TABLE consignee; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1948,7 +1948,7 @@ COMMENT ON TABLE port_p7.consignee IS 'Грузополучатель';
 
 
 --
--- TOC entry 5517 (class 0 OID 0)
+-- TOC entry 5544 (class 0 OID 0)
 -- Dependencies: 271
 -- Name: COLUMN consignee.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1957,7 +1957,7 @@ COMMENT ON COLUMN port_p7.consignee.id IS 'Суррогатный первичн
 
 
 --
--- TOC entry 5518 (class 0 OID 0)
+-- TOC entry 5545 (class 0 OID 0)
 -- Dependencies: 271
 -- Name: COLUMN consignee.name; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1966,7 +1966,7 @@ COMMENT ON COLUMN port_p7.consignee.name IS 'Наименование';
 
 
 --
--- TOC entry 5519 (class 0 OID 0)
+-- TOC entry 5546 (class 0 OID 0)
 -- Dependencies: 271
 -- Name: COLUMN consignee.inn; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -1975,7 +1975,7 @@ COMMENT ON COLUMN port_p7.consignee.inn IS 'ИНН резидента';
 
 
 --
--- TOC entry 5520 (class 0 OID 0)
+-- TOC entry 5547 (class 0 OID 0)
 -- Dependencies: 271
 -- Name: COLUMN consignee.phone; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2015,7 +2015,7 @@ CREATE TABLE port_p7.consignor (
 
 
 --
--- TOC entry 5521 (class 0 OID 0)
+-- TOC entry 5548 (class 0 OID 0)
 -- Dependencies: 269
 -- Name: TABLE consignor; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2024,7 +2024,7 @@ COMMENT ON TABLE port_p7.consignor IS 'Грузоотправитель';
 
 
 --
--- TOC entry 5522 (class 0 OID 0)
+-- TOC entry 5549 (class 0 OID 0)
 -- Dependencies: 269
 -- Name: COLUMN consignor.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2033,7 +2033,7 @@ COMMENT ON COLUMN port_p7.consignor.id IS 'Суррогатный первичн
 
 
 --
--- TOC entry 5523 (class 0 OID 0)
+-- TOC entry 5550 (class 0 OID 0)
 -- Dependencies: 269
 -- Name: COLUMN consignor.name; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2042,7 +2042,7 @@ COMMENT ON COLUMN port_p7.consignor.name IS 'Наименование';
 
 
 --
--- TOC entry 5524 (class 0 OID 0)
+-- TOC entry 5551 (class 0 OID 0)
 -- Dependencies: 269
 -- Name: COLUMN consignor.inn; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2051,7 +2051,7 @@ COMMENT ON COLUMN port_p7.consignor.inn IS 'ИНН резидента';
 
 
 --
--- TOC entry 5525 (class 0 OID 0)
+-- TOC entry 5552 (class 0 OID 0)
 -- Dependencies: 269
 -- Name: COLUMN consignor.phone; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2095,7 +2095,7 @@ CREATE TABLE port_p7.employee (
 
 
 --
--- TOC entry 5526 (class 0 OID 0)
+-- TOC entry 5553 (class 0 OID 0)
 -- Dependencies: 273
 -- Name: TABLE employee; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2104,7 +2104,7 @@ COMMENT ON TABLE port_p7.employee IS 'Сотрудник';
 
 
 --
--- TOC entry 5527 (class 0 OID 0)
+-- TOC entry 5554 (class 0 OID 0)
 -- Dependencies: 273
 -- Name: COLUMN employee.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2113,7 +2113,7 @@ COMMENT ON COLUMN port_p7.employee.id IS 'Суррогатный первичн�
 
 
 --
--- TOC entry 5528 (class 0 OID 0)
+-- TOC entry 5555 (class 0 OID 0)
 -- Dependencies: 273
 -- Name: COLUMN employee.full_name; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2122,7 +2122,7 @@ COMMENT ON COLUMN port_p7.employee.full_name IS 'ФИО';
 
 
 --
--- TOC entry 5529 (class 0 OID 0)
+-- TOC entry 5556 (class 0 OID 0)
 -- Dependencies: 273
 -- Name: COLUMN employee."position"; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2131,7 +2131,7 @@ COMMENT ON COLUMN port_p7.employee."position" IS 'Должность';
 
 
 --
--- TOC entry 5530 (class 0 OID 0)
+-- TOC entry 5557 (class 0 OID 0)
 -- Dependencies: 273
 -- Name: COLUMN employee.employee_number; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2140,7 +2140,7 @@ COMMENT ON COLUMN port_p7.employee.employee_number IS 'Табельный ном
 
 
 --
--- TOC entry 5531 (class 0 OID 0)
+-- TOC entry 5558 (class 0 OID 0)
 -- Dependencies: 273
 -- Name: COLUMN employee.login; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2149,7 +2149,7 @@ COMMENT ON COLUMN port_p7.employee.login IS 'Логин';
 
 
 --
--- TOC entry 5532 (class 0 OID 0)
+-- TOC entry 5559 (class 0 OID 0)
 -- Dependencies: 273
 -- Name: COLUMN employee.password_hash; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2188,7 +2188,7 @@ CREATE TABLE port_p7.fee_type (
 
 
 --
--- TOC entry 5533 (class 0 OID 0)
+-- TOC entry 5560 (class 0 OID 0)
 -- Dependencies: 263
 -- Name: TABLE fee_type; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2197,7 +2197,7 @@ COMMENT ON TABLE port_p7.fee_type IS 'Вид сбора';
 
 
 --
--- TOC entry 5534 (class 0 OID 0)
+-- TOC entry 5561 (class 0 OID 0)
 -- Dependencies: 263
 -- Name: COLUMN fee_type.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2206,7 +2206,7 @@ COMMENT ON COLUMN port_p7.fee_type.id IS 'Суррогатный первичн�
 
 
 --
--- TOC entry 5535 (class 0 OID 0)
+-- TOC entry 5562 (class 0 OID 0)
 -- Dependencies: 263
 -- Name: COLUMN fee_type.name; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2215,7 +2215,7 @@ COMMENT ON COLUMN port_p7.fee_type.name IS 'Наименование';
 
 
 --
--- TOC entry 5536 (class 0 OID 0)
+-- TOC entry 5563 (class 0 OID 0)
 -- Dependencies: 263
 -- Name: COLUMN fee_type.base_rate; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2224,7 +2224,7 @@ COMMENT ON COLUMN port_p7.fee_type.base_rate IS 'Базовая ставка';
 
 
 --
--- TOC entry 5537 (class 0 OID 0)
+-- TOC entry 5564 (class 0 OID 0)
 -- Dependencies: 263
 -- Name: COLUMN fee_type.unit_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2239,6 +2239,44 @@ COMMENT ON COLUMN port_p7.fee_type.unit_id IS 'Единица начислени
 
 ALTER TABLE port_p7.fee_type ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
     SEQUENCE NAME port_p7.fee_type_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
+-- TOC entry 291 (class 1259 OID 17082)
+-- Name: port_department; Type: TABLE; Schema: port_p7; Owner: -
+--
+
+CREATE TABLE port_p7.port_department (
+    id integer NOT NULL,
+    name character varying(100) NOT NULL,
+    parent_id integer,
+    CONSTRAINT port_department_check CHECK (((parent_id IS NULL) OR (parent_id <> id))),
+    CONSTRAINT port_department_name_check CHECK ((btrim((name)::text) <> ''::text))
+);
+
+
+--
+-- TOC entry 5565 (class 0 OID 0)
+-- Dependencies: 291
+-- Name: TABLE port_department; Type: COMMENT; Schema: port_p7; Owner: -
+--
+
+COMMENT ON TABLE port_p7.port_department IS 'Иерархия подразделений для РБД 2 и 3';
+
+
+--
+-- TOC entry 290 (class 1259 OID 17081)
+-- Name: port_department_id_seq; Type: SEQUENCE; Schema: port_p7; Owner: -
+--
+
+ALTER TABLE port_p7.port_department ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME port_p7.port_department_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -2264,7 +2302,7 @@ CREATE TABLE port_p7.ship_owner (
 
 
 --
--- TOC entry 5538 (class 0 OID 0)
+-- TOC entry 5566 (class 0 OID 0)
 -- Dependencies: 267
 -- Name: TABLE ship_owner; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2273,7 +2311,7 @@ COMMENT ON TABLE port_p7.ship_owner IS 'Судовладелец';
 
 
 --
--- TOC entry 5539 (class 0 OID 0)
+-- TOC entry 5567 (class 0 OID 0)
 -- Dependencies: 267
 -- Name: COLUMN ship_owner.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2282,7 +2320,7 @@ COMMENT ON COLUMN port_p7.ship_owner.id IS 'Суррогатный первич�
 
 
 --
--- TOC entry 5540 (class 0 OID 0)
+-- TOC entry 5568 (class 0 OID 0)
 -- Dependencies: 267
 -- Name: COLUMN ship_owner.name; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2291,7 +2329,7 @@ COMMENT ON COLUMN port_p7.ship_owner.name IS 'Наименование';
 
 
 --
--- TOC entry 5541 (class 0 OID 0)
+-- TOC entry 5569 (class 0 OID 0)
 -- Dependencies: 267
 -- Name: COLUMN ship_owner.country; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2300,7 +2338,7 @@ COMMENT ON COLUMN port_p7.ship_owner.country IS 'Страна';
 
 
 --
--- TOC entry 5542 (class 0 OID 0)
+-- TOC entry 5570 (class 0 OID 0)
 -- Dependencies: 267
 -- Name: COLUMN ship_owner.phone; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2343,7 +2381,7 @@ CREATE TABLE port_p7.stock_balance (
 
 
 --
--- TOC entry 5543 (class 0 OID 0)
+-- TOC entry 5571 (class 0 OID 0)
 -- Dependencies: 289
 -- Name: TABLE stock_balance; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2352,7 +2390,7 @@ COMMENT ON TABLE port_p7.stock_balance IS 'Текущий остаток';
 
 
 --
--- TOC entry 5544 (class 0 OID 0)
+-- TOC entry 5572 (class 0 OID 0)
 -- Dependencies: 289
 -- Name: COLUMN stock_balance.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2361,7 +2399,7 @@ COMMENT ON COLUMN port_p7.stock_balance.id IS 'Суррогатный перви
 
 
 --
--- TOC entry 5545 (class 0 OID 0)
+-- TOC entry 5573 (class 0 OID 0)
 -- Dependencies: 289
 -- Name: COLUMN stock_balance.cargo_type_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2370,7 +2408,7 @@ COMMENT ON COLUMN port_p7.stock_balance.cargo_type_id IS 'Тип груза';
 
 
 --
--- TOC entry 5546 (class 0 OID 0)
+-- TOC entry 5574 (class 0 OID 0)
 -- Dependencies: 289
 -- Name: COLUMN stock_balance.quantity; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2379,7 +2417,7 @@ COMMENT ON COLUMN port_p7.stock_balance.quantity IS 'Остаток';
 
 
 --
--- TOC entry 5547 (class 0 OID 0)
+-- TOC entry 5575 (class 0 OID 0)
 -- Dependencies: 289
 -- Name: COLUMN stock_balance.unit_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2388,7 +2426,7 @@ COMMENT ON COLUMN port_p7.stock_balance.unit_id IS 'Единица измере�
 
 
 --
--- TOC entry 5548 (class 0 OID 0)
+-- TOC entry 5576 (class 0 OID 0)
 -- Dependencies: 289
 -- Name: COLUMN stock_balance.location; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2397,7 +2435,7 @@ COMMENT ON COLUMN port_p7.stock_balance.location IS 'Место хранения
 
 
 --
--- TOC entry 5549 (class 0 OID 0)
+-- TOC entry 5577 (class 0 OID 0)
 -- Dependencies: 289
 -- Name: COLUMN stock_balance.batch_number; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2406,7 +2444,7 @@ COMMENT ON COLUMN port_p7.stock_balance.batch_number IS 'Номер партии
 
 
 --
--- TOC entry 5550 (class 0 OID 0)
+-- TOC entry 5578 (class 0 OID 0)
 -- Dependencies: 289
 -- Name: COLUMN stock_balance.last_updated; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2444,7 +2482,7 @@ CREATE TABLE port_p7.unit (
 
 
 --
--- TOC entry 5551 (class 0 OID 0)
+-- TOC entry 5579 (class 0 OID 0)
 -- Dependencies: 261
 -- Name: TABLE unit; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2453,7 +2491,7 @@ COMMENT ON TABLE port_p7.unit IS 'Единица измерения';
 
 
 --
--- TOC entry 5552 (class 0 OID 0)
+-- TOC entry 5580 (class 0 OID 0)
 -- Dependencies: 261
 -- Name: COLUMN unit.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2462,7 +2500,7 @@ COMMENT ON COLUMN port_p7.unit.id IS 'Суррогатный первичный 
 
 
 --
--- TOC entry 5553 (class 0 OID 0)
+-- TOC entry 5581 (class 0 OID 0)
 -- Dependencies: 261
 -- Name: COLUMN unit.name; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2471,7 +2509,7 @@ COMMENT ON COLUMN port_p7.unit.name IS 'Наименование';
 
 
 --
--- TOC entry 5554 (class 0 OID 0)
+-- TOC entry 5582 (class 0 OID 0)
 -- Dependencies: 261
 -- Name: COLUMN unit.short_name; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2486,6 +2524,44 @@ COMMENT ON COLUMN port_p7.unit.short_name IS 'Обозначение';
 
 ALTER TABLE port_p7.unit ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
     SEQUENCE NAME port_p7.unit_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
+-- TOC entry 293 (class 1259 OID 17098)
+-- Name: user_logs; Type: TABLE; Schema: port_p7; Owner: -
+--
+
+CREATE TABLE port_p7.user_logs (
+    id integer NOT NULL,
+    employee_id integer NOT NULL,
+    occurred_at timestamp with time zone NOT NULL,
+    event_data jsonb NOT NULL,
+    CONSTRAINT user_logs_event_data_check CHECK ((jsonb_typeof(event_data) = 'object'::text))
+);
+
+
+--
+-- TOC entry 5583 (class 0 OID 0)
+-- Dependencies: 293
+-- Name: TABLE user_logs; Type: COMMENT; Schema: port_p7; Owner: -
+--
+
+COMMENT ON TABLE port_p7.user_logs IS 'Учебный журнал действий сотрудников для РБД 3';
+
+
+--
+-- TOC entry 292 (class 1259 OID 17097)
+-- Name: user_logs_id_seq; Type: SEQUENCE; Schema: port_p7; Owner: -
+--
+
+ALTER TABLE port_p7.user_logs ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME port_p7.user_logs_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -2518,7 +2594,7 @@ CREATE TABLE port_p7.vessel (
 
 
 --
--- TOC entry 5555 (class 0 OID 0)
+-- TOC entry 5584 (class 0 OID 0)
 -- Dependencies: 275
 -- Name: TABLE vessel; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2527,7 +2603,7 @@ COMMENT ON TABLE port_p7.vessel IS 'Судно';
 
 
 --
--- TOC entry 5556 (class 0 OID 0)
+-- TOC entry 5585 (class 0 OID 0)
 -- Dependencies: 275
 -- Name: COLUMN vessel.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2536,7 +2612,7 @@ COMMENT ON COLUMN port_p7.vessel.id IS 'Суррогатный первичны�
 
 
 --
--- TOC entry 5557 (class 0 OID 0)
+-- TOC entry 5586 (class 0 OID 0)
 -- Dependencies: 275
 -- Name: COLUMN vessel.name; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2545,7 +2621,7 @@ COMMENT ON COLUMN port_p7.vessel.name IS 'Название';
 
 
 --
--- TOC entry 5558 (class 0 OID 0)
+-- TOC entry 5587 (class 0 OID 0)
 -- Dependencies: 275
 -- Name: COLUMN vessel.call_sign; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2554,7 +2630,7 @@ COMMENT ON COLUMN port_p7.vessel.call_sign IS 'Позывной';
 
 
 --
--- TOC entry 5559 (class 0 OID 0)
+-- TOC entry 5588 (class 0 OID 0)
 -- Dependencies: 275
 -- Name: COLUMN vessel.imo_number; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2563,7 +2639,7 @@ COMMENT ON COLUMN port_p7.vessel.imo_number IS 'Номер ИМО';
 
 
 --
--- TOC entry 5560 (class 0 OID 0)
+-- TOC entry 5589 (class 0 OID 0)
 -- Dependencies: 275
 -- Name: COLUMN vessel.flag; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2572,7 +2648,7 @@ COMMENT ON COLUMN port_p7.vessel.flag IS 'Страна флага';
 
 
 --
--- TOC entry 5561 (class 0 OID 0)
+-- TOC entry 5590 (class 0 OID 0)
 -- Dependencies: 275
 -- Name: COLUMN vessel.vessel_type_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2581,7 +2657,7 @@ COMMENT ON COLUMN port_p7.vessel.vessel_type_id IS 'Тип судна';
 
 
 --
--- TOC entry 5562 (class 0 OID 0)
+-- TOC entry 5591 (class 0 OID 0)
 -- Dependencies: 275
 -- Name: COLUMN vessel.ship_owner_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2590,7 +2666,7 @@ COMMENT ON COLUMN port_p7.vessel.ship_owner_id IS 'Судовладелец';
 
 
 --
--- TOC entry 5563 (class 0 OID 0)
+-- TOC entry 5592 (class 0 OID 0)
 -- Dependencies: 275
 -- Name: COLUMN vessel.vessel_status_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2599,7 +2675,7 @@ COMMENT ON COLUMN port_p7.vessel.vessel_status_id IS 'Текущий стату�
 
 
 --
--- TOC entry 5564 (class 0 OID 0)
+-- TOC entry 5593 (class 0 OID 0)
 -- Dependencies: 275
 -- Name: COLUMN vessel.gross_tonnage; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2626,7 +2702,7 @@ CREATE TABLE port_p7.vessel_call (
 
 
 --
--- TOC entry 5565 (class 0 OID 0)
+-- TOC entry 5594 (class 0 OID 0)
 -- Dependencies: 277
 -- Name: TABLE vessel_call; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2635,7 +2711,7 @@ COMMENT ON TABLE port_p7.vessel_call IS 'Заход судна';
 
 
 --
--- TOC entry 5566 (class 0 OID 0)
+-- TOC entry 5595 (class 0 OID 0)
 -- Dependencies: 277
 -- Name: COLUMN vessel_call.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2644,7 +2720,7 @@ COMMENT ON COLUMN port_p7.vessel_call.id IS 'Суррогатный первич
 
 
 --
--- TOC entry 5567 (class 0 OID 0)
+-- TOC entry 5596 (class 0 OID 0)
 -- Dependencies: 277
 -- Name: COLUMN vessel_call.arrival_datetime; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2653,7 +2729,7 @@ COMMENT ON COLUMN port_p7.vessel_call.arrival_datetime IS 'Время прибы
 
 
 --
--- TOC entry 5568 (class 0 OID 0)
+-- TOC entry 5597 (class 0 OID 0)
 -- Dependencies: 277
 -- Name: COLUMN vessel_call.vessel_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2662,7 +2738,7 @@ COMMENT ON COLUMN port_p7.vessel_call.vessel_id IS 'Судно';
 
 
 --
--- TOC entry 5569 (class 0 OID 0)
+-- TOC entry 5598 (class 0 OID 0)
 -- Dependencies: 277
 -- Name: COLUMN vessel_call.berth_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2671,7 +2747,7 @@ COMMENT ON COLUMN port_p7.vessel_call.berth_id IS 'Причал';
 
 
 --
--- TOC entry 5570 (class 0 OID 0)
+-- TOC entry 5599 (class 0 OID 0)
 -- Dependencies: 277
 -- Name: COLUMN vessel_call.purpose; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2680,7 +2756,7 @@ COMMENT ON COLUMN port_p7.vessel_call.purpose IS 'Цель захода';
 
 
 --
--- TOC entry 5571 (class 0 OID 0)
+-- TOC entry 5600 (class 0 OID 0)
 -- Dependencies: 277
 -- Name: COLUMN vessel_call.dispatcher_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2689,7 +2765,7 @@ COMMENT ON COLUMN port_p7.vessel_call.dispatcher_id IS 'Диспетчер';
 
 
 --
--- TOC entry 5572 (class 0 OID 0)
+-- TOC entry 5601 (class 0 OID 0)
 -- Dependencies: 277
 -- Name: COLUMN vessel_call.departure_datetime; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2730,7 +2806,7 @@ CREATE TABLE port_p7.vessel_call_service (
 
 
 --
--- TOC entry 5573 (class 0 OID 0)
+-- TOC entry 5602 (class 0 OID 0)
 -- Dependencies: 279
 -- Name: TABLE vessel_call_service; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2739,7 +2815,7 @@ COMMENT ON TABLE port_p7.vessel_call_service IS 'Позиция захода';
 
 
 --
--- TOC entry 5574 (class 0 OID 0)
+-- TOC entry 5603 (class 0 OID 0)
 -- Dependencies: 279
 -- Name: COLUMN vessel_call_service.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2748,7 +2824,7 @@ COMMENT ON COLUMN port_p7.vessel_call_service.id IS 'Суррогатный пе
 
 
 --
--- TOC entry 5575 (class 0 OID 0)
+-- TOC entry 5604 (class 0 OID 0)
 -- Dependencies: 279
 -- Name: COLUMN vessel_call_service.vessel_call_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2757,7 +2833,7 @@ COMMENT ON COLUMN port_p7.vessel_call_service.vessel_call_id IS 'Заход';
 
 
 --
--- TOC entry 5576 (class 0 OID 0)
+-- TOC entry 5605 (class 0 OID 0)
 -- Dependencies: 279
 -- Name: COLUMN vessel_call_service.fee_type_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2766,7 +2842,7 @@ COMMENT ON COLUMN port_p7.vessel_call_service.fee_type_id IS 'Вид сбора'
 
 
 --
--- TOC entry 5577 (class 0 OID 0)
+-- TOC entry 5606 (class 0 OID 0)
 -- Dependencies: 279
 -- Name: COLUMN vessel_call_service.quantity; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2775,7 +2851,7 @@ COMMENT ON COLUMN port_p7.vessel_call_service.quantity IS 'Количество'
 
 
 --
--- TOC entry 5578 (class 0 OID 0)
+-- TOC entry 5607 (class 0 OID 0)
 -- Dependencies: 279
 -- Name: COLUMN vessel_call_service.rate; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2784,7 +2860,7 @@ COMMENT ON COLUMN port_p7.vessel_call_service.rate IS 'Историческая 
 
 
 --
--- TOC entry 5579 (class 0 OID 0)
+-- TOC entry 5608 (class 0 OID 0)
 -- Dependencies: 279
 -- Name: COLUMN vessel_call_service.amount; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2835,7 +2911,7 @@ CREATE TABLE port_p7.vessel_status (
 
 
 --
--- TOC entry 5580 (class 0 OID 0)
+-- TOC entry 5609 (class 0 OID 0)
 -- Dependencies: 259
 -- Name: TABLE vessel_status; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2844,7 +2920,7 @@ COMMENT ON TABLE port_p7.vessel_status IS 'Статус судна';
 
 
 --
--- TOC entry 5581 (class 0 OID 0)
+-- TOC entry 5610 (class 0 OID 0)
 -- Dependencies: 259
 -- Name: COLUMN vessel_status.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2853,7 +2929,7 @@ COMMENT ON COLUMN port_p7.vessel_status.id IS 'Суррогатный перви
 
 
 --
--- TOC entry 5582 (class 0 OID 0)
+-- TOC entry 5611 (class 0 OID 0)
 -- Dependencies: 259
 -- Name: COLUMN vessel_status.name; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2890,7 +2966,7 @@ CREATE TABLE port_p7.vessel_type (
 
 
 --
--- TOC entry 5583 (class 0 OID 0)
+-- TOC entry 5612 (class 0 OID 0)
 -- Dependencies: 255
 -- Name: TABLE vessel_type; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2899,7 +2975,7 @@ COMMENT ON TABLE port_p7.vessel_type IS 'Тип судна';
 
 
 --
--- TOC entry 5584 (class 0 OID 0)
+-- TOC entry 5613 (class 0 OID 0)
 -- Dependencies: 255
 -- Name: COLUMN vessel_type.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2908,7 +2984,7 @@ COMMENT ON COLUMN port_p7.vessel_type.id IS 'Суррогатный первич
 
 
 --
--- TOC entry 5585 (class 0 OID 0)
+-- TOC entry 5614 (class 0 OID 0)
 -- Dependencies: 255
 -- Name: COLUMN vessel_type.name; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2917,7 +2993,7 @@ COMMENT ON COLUMN port_p7.vessel_type.name IS 'Наименование';
 
 
 --
--- TOC entry 5586 (class 0 OID 0)
+-- TOC entry 5615 (class 0 OID 0)
 -- Dependencies: 255
 -- Name: COLUMN vessel_type.description; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2960,7 +3036,7 @@ CREATE TABLE port_p7.warehouse_order (
 
 
 --
--- TOC entry 5587 (class 0 OID 0)
+-- TOC entry 5616 (class 0 OID 0)
 -- Dependencies: 285
 -- Name: TABLE warehouse_order; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2969,7 +3045,7 @@ COMMENT ON TABLE port_p7.warehouse_order IS 'Складской ордер';
 
 
 --
--- TOC entry 5588 (class 0 OID 0)
+-- TOC entry 5617 (class 0 OID 0)
 -- Dependencies: 285
 -- Name: COLUMN warehouse_order.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2978,7 +3054,7 @@ COMMENT ON COLUMN port_p7.warehouse_order.id IS 'Суррогатный перв
 
 
 --
--- TOC entry 5589 (class 0 OID 0)
+-- TOC entry 5618 (class 0 OID 0)
 -- Dependencies: 285
 -- Name: COLUMN warehouse_order.order_number; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2987,7 +3063,7 @@ COMMENT ON COLUMN port_p7.warehouse_order.order_number IS 'Номер';
 
 
 --
--- TOC entry 5590 (class 0 OID 0)
+-- TOC entry 5619 (class 0 OID 0)
 -- Dependencies: 285
 -- Name: COLUMN warehouse_order.created_at; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -2996,7 +3072,7 @@ COMMENT ON COLUMN port_p7.warehouse_order.created_at IS 'Дата создани
 
 
 --
--- TOC entry 5591 (class 0 OID 0)
+-- TOC entry 5620 (class 0 OID 0)
 -- Dependencies: 285
 -- Name: COLUMN warehouse_order.order_type; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3005,7 +3081,7 @@ COMMENT ON COLUMN port_p7.warehouse_order.order_type IS 'ПРИХОД РАСХО
 
 
 --
--- TOC entry 5592 (class 0 OID 0)
+-- TOC entry 5621 (class 0 OID 0)
 -- Dependencies: 285
 -- Name: COLUMN warehouse_order.consignor_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3014,7 +3090,7 @@ COMMENT ON COLUMN port_p7.warehouse_order.consignor_id IS 'Контрагент 
 
 
 --
--- TOC entry 5593 (class 0 OID 0)
+-- TOC entry 5622 (class 0 OID 0)
 -- Dependencies: 285
 -- Name: COLUMN warehouse_order.consignee_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3023,7 +3099,7 @@ COMMENT ON COLUMN port_p7.warehouse_order.consignee_id IS 'Контрагент 
 
 
 --
--- TOC entry 5594 (class 0 OID 0)
+-- TOC entry 5623 (class 0 OID 0)
 -- Dependencies: 285
 -- Name: COLUMN warehouse_order.responsible_emp_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3066,7 +3142,7 @@ CREATE TABLE port_p7.warehouse_order_item (
 
 
 --
--- TOC entry 5595 (class 0 OID 0)
+-- TOC entry 5624 (class 0 OID 0)
 -- Dependencies: 287
 -- Name: TABLE warehouse_order_item; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3075,7 +3151,7 @@ COMMENT ON TABLE port_p7.warehouse_order_item IS 'Позиция складск�
 
 
 --
--- TOC entry 5596 (class 0 OID 0)
+-- TOC entry 5625 (class 0 OID 0)
 -- Dependencies: 287
 -- Name: COLUMN warehouse_order_item.id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3084,7 +3160,7 @@ COMMENT ON COLUMN port_p7.warehouse_order_item.id IS 'Суррогатный п�
 
 
 --
--- TOC entry 5597 (class 0 OID 0)
+-- TOC entry 5626 (class 0 OID 0)
 -- Dependencies: 287
 -- Name: COLUMN warehouse_order_item.warehouse_order_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3093,7 +3169,7 @@ COMMENT ON COLUMN port_p7.warehouse_order_item.warehouse_order_id IS 'Ордер
 
 
 --
--- TOC entry 5598 (class 0 OID 0)
+-- TOC entry 5627 (class 0 OID 0)
 -- Dependencies: 287
 -- Name: COLUMN warehouse_order_item.cargo_type_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3102,7 +3178,7 @@ COMMENT ON COLUMN port_p7.warehouse_order_item.cargo_type_id IS 'Тип груз
 
 
 --
--- TOC entry 5599 (class 0 OID 0)
+-- TOC entry 5628 (class 0 OID 0)
 -- Dependencies: 287
 -- Name: COLUMN warehouse_order_item.quantity; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3111,7 +3187,7 @@ COMMENT ON COLUMN port_p7.warehouse_order_item.quantity IS 'Количество
 
 
 --
--- TOC entry 5600 (class 0 OID 0)
+-- TOC entry 5629 (class 0 OID 0)
 -- Dependencies: 287
 -- Name: COLUMN warehouse_order_item.unit_id; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3120,7 +3196,7 @@ COMMENT ON COLUMN port_p7.warehouse_order_item.unit_id IS 'Единица изм
 
 
 --
--- TOC entry 5601 (class 0 OID 0)
+-- TOC entry 5630 (class 0 OID 0)
 -- Dependencies: 287
 -- Name: COLUMN warehouse_order_item.location; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3129,7 +3205,7 @@ COMMENT ON COLUMN port_p7.warehouse_order_item.location IS 'Место хран�
 
 
 --
--- TOC entry 5602 (class 0 OID 0)
+-- TOC entry 5631 (class 0 OID 0)
 -- Dependencies: 287
 -- Name: COLUMN warehouse_order_item.batch_number; Type: COMMENT; Schema: port_p7; Owner: -
 --
@@ -3153,7 +3229,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5314 (class 0 OID 16498)
+-- TOC entry 5337 (class 0 OID 16498)
 -- Dependencies: 228
 -- Data for Name: berth; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3161,7 +3237,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5330 (class 0 OID 16614)
+-- TOC entry 5353 (class 0 OID 16614)
 -- Dependencies: 244
 -- Data for Name: cargo_operation; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3169,7 +3245,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5332 (class 0 OID 16641)
+-- TOC entry 5355 (class 0 OID 16641)
 -- Dependencies: 246
 -- Data for Name: cargo_operation_item; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3177,7 +3253,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5306 (class 0 OID 16457)
+-- TOC entry 5329 (class 0 OID 16457)
 -- Dependencies: 220
 -- Data for Name: cargo_type; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3185,7 +3261,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5320 (class 0 OID 16521)
+-- TOC entry 5343 (class 0 OID 16521)
 -- Dependencies: 234
 -- Data for Name: consignee; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3193,7 +3269,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5318 (class 0 OID 16513)
+-- TOC entry 5341 (class 0 OID 16513)
 -- Dependencies: 232
 -- Data for Name: consignor; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3201,7 +3277,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5322 (class 0 OID 16529)
+-- TOC entry 5345 (class 0 OID 16529)
 -- Dependencies: 236
 -- Data for Name: employee; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3209,7 +3285,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5312 (class 0 OID 16484)
+-- TOC entry 5335 (class 0 OID 16484)
 -- Dependencies: 226
 -- Data for Name: fee_type; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3217,7 +3293,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5316 (class 0 OID 16507)
+-- TOC entry 5339 (class 0 OID 16507)
 -- Dependencies: 230
 -- Data for Name: ship_owner; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3225,7 +3301,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5338 (class 0 OID 16716)
+-- TOC entry 5361 (class 0 OID 16716)
 -- Dependencies: 252
 -- Data for Name: stock_balance; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3233,7 +3309,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5310 (class 0 OID 16474)
+-- TOC entry 5333 (class 0 OID 16474)
 -- Dependencies: 224
 -- Data for Name: unit; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3241,7 +3317,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5324 (class 0 OID 16541)
+-- TOC entry 5347 (class 0 OID 16541)
 -- Dependencies: 238
 -- Data for Name: vessel; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3249,7 +3325,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5326 (class 0 OID 16569)
+-- TOC entry 5349 (class 0 OID 16569)
 -- Dependencies: 240
 -- Data for Name: vessel_call; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3257,7 +3333,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5328 (class 0 OID 16594)
+-- TOC entry 5351 (class 0 OID 16594)
 -- Dependencies: 242
 -- Data for Name: vessel_call_service; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3265,7 +3341,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5308 (class 0 OID 16466)
+-- TOC entry 5331 (class 0 OID 16466)
 -- Dependencies: 222
 -- Data for Name: vessel_status; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3273,7 +3349,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5304 (class 0 OID 16447)
+-- TOC entry 5327 (class 0 OID 16447)
 -- Dependencies: 218
 -- Data for Name: vessel_type; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3281,7 +3357,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5334 (class 0 OID 16665)
+-- TOC entry 5357 (class 0 OID 16665)
 -- Dependencies: 248
 -- Data for Name: warehouse_order; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3289,7 +3365,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5336 (class 0 OID 16692)
+-- TOC entry 5359 (class 0 OID 16692)
 -- Dependencies: 250
 -- Data for Name: warehouse_order_item; Type: TABLE DATA; Schema: port_p6; Owner: -
 --
@@ -3297,7 +3373,7 @@ ALTER TABLE port_p7.warehouse_order_item ALTER COLUMN id ADD GENERATED ALWAYS AS
 
 
 --
--- TOC entry 5350 (class 0 OID 16802)
+-- TOC entry 5373 (class 0 OID 16802)
 -- Dependencies: 265
 -- Data for Name: berth; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3315,7 +3391,7 @@ INSERT INTO port_p7.berth OVERRIDING SYSTEM VALUE VALUES (10, 'П-10', 13.00, tr
 
 
 --
--- TOC entry 5366 (class 0 OID 16943)
+-- TOC entry 5389 (class 0 OID 16943)
 -- Dependencies: 281
 -- Data for Name: cargo_operation; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3333,7 +3409,7 @@ INSERT INTO port_p7.cargo_operation OVERRIDING SYSTEM VALUE VALUES (10, 'GO-2026
 
 
 --
--- TOC entry 5368 (class 0 OID 16972)
+-- TOC entry 5391 (class 0 OID 16972)
 -- Dependencies: 283
 -- Data for Name: cargo_operation_item; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3351,7 +3427,7 @@ INSERT INTO port_p7.cargo_operation_item OVERRIDING SYSTEM VALUE VALUES (10, 10,
 
 
 --
--- TOC entry 5342 (class 0 OID 16754)
+-- TOC entry 5365 (class 0 OID 16754)
 -- Dependencies: 257
 -- Data for Name: cargo_type; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3369,7 +3445,7 @@ INSERT INTO port_p7.cargo_type OVERRIDING SYSTEM VALUE VALUES (10, 'Нефтеп
 
 
 --
--- TOC entry 5356 (class 0 OID 16833)
+-- TOC entry 5379 (class 0 OID 16833)
 -- Dependencies: 271
 -- Data for Name: consignee; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3387,7 +3463,7 @@ INSERT INTO port_p7.consignee OVERRIDING SYSTEM VALUE VALUES (10, 'ООО «По
 
 
 --
--- TOC entry 5354 (class 0 OID 16822)
+-- TOC entry 5377 (class 0 OID 16822)
 -- Dependencies: 269
 -- Data for Name: consignor; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3405,7 +3481,7 @@ INSERT INTO port_p7.consignor OVERRIDING SYSTEM VALUE VALUES (10, 'ООО «От
 
 
 --
--- TOC entry 5358 (class 0 OID 16844)
+-- TOC entry 5381 (class 0 OID 16844)
 -- Dependencies: 273
 -- Data for Name: employee; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3423,7 +3499,7 @@ INSERT INTO port_p7.employee OVERRIDING SYSTEM VALUE VALUES (10, '(Волков,
 
 
 --
--- TOC entry 5348 (class 0 OID 16786)
+-- TOC entry 5371 (class 0 OID 16786)
 -- Dependencies: 263
 -- Data for Name: fee_type; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3441,7 +3517,25 @@ INSERT INTO port_p7.fee_type OVERRIDING SYSTEM VALUE VALUES (10, 'Обеспеч
 
 
 --
--- TOC entry 5352 (class 0 OID 16813)
+-- TOC entry 5399 (class 0 OID 17082)
+-- Dependencies: 291
+-- Data for Name: port_department; Type: TABLE DATA; Schema: port_p7; Owner: -
+--
+
+INSERT INTO port_p7.port_department OVERRIDING SYSTEM VALUE VALUES (1, 'Морской терминал', NULL);
+INSERT INTO port_p7.port_department OVERRIDING SYSTEM VALUE VALUES (2, 'Портовые операции', 1);
+INSERT INTO port_p7.port_department OVERRIDING SYSTEM VALUE VALUES (3, 'Складская служба', 1);
+INSERT INTO port_p7.port_department OVERRIDING SYSTEM VALUE VALUES (4, 'Администрация', 1);
+INSERT INTO port_p7.port_department OVERRIDING SYSTEM VALUE VALUES (5, 'Причальная служба', 2);
+INSERT INTO port_p7.port_department OVERRIDING SYSTEM VALUE VALUES (6, 'Диспетчерская', 2);
+INSERT INTO port_p7.port_department OVERRIDING SYSTEM VALUE VALUES (7, 'Контейнерная площадка', 3);
+INSERT INTO port_p7.port_department OVERRIDING SYSTEM VALUE VALUES (8, 'Склад навалочных грузов', 3);
+INSERT INTO port_p7.port_department OVERRIDING SYSTEM VALUE VALUES (9, 'Отдел кадров', 4);
+INSERT INTO port_p7.port_department OVERRIDING SYSTEM VALUE VALUES (10, 'Бухгалтерия', 4);
+
+
+--
+-- TOC entry 5375 (class 0 OID 16813)
 -- Dependencies: 267
 -- Data for Name: ship_owner; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3459,7 +3553,7 @@ INSERT INTO port_p7.ship_owner OVERRIDING SYSTEM VALUE VALUES (10, 'ООО «П�
 
 
 --
--- TOC entry 5374 (class 0 OID 17054)
+-- TOC entry 5397 (class 0 OID 17054)
 -- Dependencies: 289
 -- Data for Name: stock_balance; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3477,7 +3571,7 @@ INSERT INTO port_p7.stock_balance OVERRIDING SYSTEM VALUE VALUES (10, 10, 170.00
 
 
 --
--- TOC entry 5346 (class 0 OID 16774)
+-- TOC entry 5369 (class 0 OID 16774)
 -- Dependencies: 261
 -- Data for Name: unit; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3495,7 +3589,25 @@ INSERT INTO port_p7.unit OVERRIDING SYSTEM VALUE VALUES (10, 'Единица GT'
 
 
 --
--- TOC entry 5360 (class 0 OID 16861)
+-- TOC entry 5401 (class 0 OID 17098)
+-- Dependencies: 293
+-- Data for Name: user_logs; Type: TABLE DATA; Schema: port_p7; Owner: -
+--
+
+INSERT INTO port_p7.user_logs OVERRIDING SYSTEM VALUE VALUES (1, 1, '2026-09-15 09:00:00+03', '{"os": "Windows", "event": "login", "source": "web", "browser": "Firefox", "success": true, "actions_count": 1}');
+INSERT INTO port_p7.user_logs OVERRIDING SYSTEM VALUE VALUES (2, 2, '2026-09-15 10:00:00+03', '{"os": "Windows", "event": "create_order", "source": "web", "browser": "Chrome", "success": true, "actions_count": 2}');
+INSERT INTO port_p7.user_logs OVERRIDING SYSTEM VALUE VALUES (4, 4, '2026-09-15 12:00:00+03', '{"os": "Windows", "event": "create_order", "source": "web", "browser": "Chrome", "success": true, "actions_count": 4}');
+INSERT INTO port_p7.user_logs OVERRIDING SYSTEM VALUE VALUES (5, 5, '2026-09-15 13:00:00+03', '{"os": "Windows", "event": "login", "source": "web", "browser": "Firefox", "success": true, "actions_count": 5}');
+INSERT INTO port_p7.user_logs OVERRIDING SYSTEM VALUE VALUES (7, 7, '2026-09-15 15:00:00+03', '{"os": "Windows", "event": "login", "source": "web", "browser": "Firefox", "success": true, "actions_count": 7}');
+INSERT INTO port_p7.user_logs OVERRIDING SYSTEM VALUE VALUES (8, 8, '2026-09-15 16:00:00+03', '{"os": "Windows", "event": "create_order", "source": "web", "browser": "Chrome", "success": true, "actions_count": 8}');
+INSERT INTO port_p7.user_logs OVERRIDING SYSTEM VALUE VALUES (10, 10, '2026-09-15 18:00:00+03', '{"os": "Windows", "event": "create_order", "source": "web", "browser": "Chrome", "success": true, "actions_count": 10}');
+INSERT INTO port_p7.user_logs OVERRIDING SYSTEM VALUE VALUES (3, 3, '2026-09-15 11:00:00+03', '{"os": "Windows", "event": "login", "source": "web", "browser": "Firefox", "success": false, "actions_count": 0}');
+INSERT INTO port_p7.user_logs OVERRIDING SYSTEM VALUE VALUES (6, 6, '2026-09-15 14:00:00+03', '{"os": "Windows", "event": "create_order", "source": "web", "browser": "Chrome", "success": false, "actions_count": 0}');
+INSERT INTO port_p7.user_logs OVERRIDING SYSTEM VALUE VALUES (9, 9, '2026-09-15 17:00:00+03', '{"os": "Windows", "event": "login", "source": "web", "browser": "Firefox", "success": false, "actions_count": 0}');
+
+
+--
+-- TOC entry 5383 (class 0 OID 16861)
 -- Dependencies: 275
 -- Data for Name: vessel; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3513,7 +3625,7 @@ INSERT INTO port_p7.vessel OVERRIDING SYSTEM VALUE VALUES (10, 'Амур', 'UB10
 
 
 --
--- TOC entry 5362 (class 0 OID 16894)
+-- TOC entry 5385 (class 0 OID 16894)
 -- Dependencies: 277
 -- Data for Name: vessel_call; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3531,7 +3643,7 @@ INSERT INTO port_p7.vessel_call OVERRIDING SYSTEM VALUE VALUES (10, '2026-09-10 
 
 
 --
--- TOC entry 5364 (class 0 OID 16921)
+-- TOC entry 5387 (class 0 OID 16921)
 -- Dependencies: 279
 -- Data for Name: vessel_call_service; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3559,7 +3671,7 @@ INSERT INTO port_p7.vessel_call_service OVERRIDING SYSTEM VALUE VALUES (20, 10, 
 
 
 --
--- TOC entry 5344 (class 0 OID 16765)
+-- TOC entry 5367 (class 0 OID 16765)
 -- Dependencies: 259
 -- Data for Name: vessel_status; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3577,7 +3689,7 @@ INSERT INTO port_p7.vessel_status OVERRIDING SYSTEM VALUE VALUES (10, 'На ре
 
 
 --
--- TOC entry 5340 (class 0 OID 16743)
+-- TOC entry 5363 (class 0 OID 16743)
 -- Dependencies: 255
 -- Data for Name: vessel_type; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3595,7 +3707,7 @@ INSERT INTO port_p7.vessel_type OVERRIDING SYSTEM VALUE VALUES (10, 'Пасса�
 
 
 --
--- TOC entry 5370 (class 0 OID 16997)
+-- TOC entry 5393 (class 0 OID 16997)
 -- Dependencies: 285
 -- Data for Name: warehouse_order; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3623,7 +3735,7 @@ INSERT INTO port_p7.warehouse_order OVERRIDING SYSTEM VALUE VALUES (20, 'WO-2026
 
 
 --
--- TOC entry 5372 (class 0 OID 17027)
+-- TOC entry 5395 (class 0 OID 17027)
 -- Dependencies: 287
 -- Data for Name: warehouse_order_item; Type: TABLE DATA; Schema: port_p7; Owner: -
 --
@@ -3651,7 +3763,7 @@ INSERT INTO port_p7.warehouse_order_item OVERRIDING SYSTEM VALUE VALUES (20, 20,
 
 
 --
--- TOC entry 5603 (class 0 OID 0)
+-- TOC entry 5632 (class 0 OID 0)
 -- Dependencies: 227
 -- Name: berth_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3660,7 +3772,7 @@ SELECT pg_catalog.setval('port_p6.berth_id_seq', 1, false);
 
 
 --
--- TOC entry 5604 (class 0 OID 0)
+-- TOC entry 5633 (class 0 OID 0)
 -- Dependencies: 243
 -- Name: cargo_operation_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3669,7 +3781,7 @@ SELECT pg_catalog.setval('port_p6.cargo_operation_id_seq', 1, false);
 
 
 --
--- TOC entry 5605 (class 0 OID 0)
+-- TOC entry 5634 (class 0 OID 0)
 -- Dependencies: 245
 -- Name: cargo_operation_item_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3678,7 +3790,7 @@ SELECT pg_catalog.setval('port_p6.cargo_operation_item_id_seq', 1, false);
 
 
 --
--- TOC entry 5606 (class 0 OID 0)
+-- TOC entry 5635 (class 0 OID 0)
 -- Dependencies: 219
 -- Name: cargo_type_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3687,7 +3799,7 @@ SELECT pg_catalog.setval('port_p6.cargo_type_id_seq', 1, false);
 
 
 --
--- TOC entry 5607 (class 0 OID 0)
+-- TOC entry 5636 (class 0 OID 0)
 -- Dependencies: 233
 -- Name: consignee_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3696,7 +3808,7 @@ SELECT pg_catalog.setval('port_p6.consignee_id_seq', 1, false);
 
 
 --
--- TOC entry 5608 (class 0 OID 0)
+-- TOC entry 5637 (class 0 OID 0)
 -- Dependencies: 231
 -- Name: consignor_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3705,7 +3817,7 @@ SELECT pg_catalog.setval('port_p6.consignor_id_seq', 1, false);
 
 
 --
--- TOC entry 5609 (class 0 OID 0)
+-- TOC entry 5638 (class 0 OID 0)
 -- Dependencies: 235
 -- Name: employee_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3714,7 +3826,7 @@ SELECT pg_catalog.setval('port_p6.employee_id_seq', 1, false);
 
 
 --
--- TOC entry 5610 (class 0 OID 0)
+-- TOC entry 5639 (class 0 OID 0)
 -- Dependencies: 225
 -- Name: fee_type_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3723,7 +3835,7 @@ SELECT pg_catalog.setval('port_p6.fee_type_id_seq', 1, false);
 
 
 --
--- TOC entry 5611 (class 0 OID 0)
+-- TOC entry 5640 (class 0 OID 0)
 -- Dependencies: 229
 -- Name: ship_owner_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3732,7 +3844,7 @@ SELECT pg_catalog.setval('port_p6.ship_owner_id_seq', 1, false);
 
 
 --
--- TOC entry 5612 (class 0 OID 0)
+-- TOC entry 5641 (class 0 OID 0)
 -- Dependencies: 251
 -- Name: stock_balance_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3741,7 +3853,7 @@ SELECT pg_catalog.setval('port_p6.stock_balance_id_seq', 1, false);
 
 
 --
--- TOC entry 5613 (class 0 OID 0)
+-- TOC entry 5642 (class 0 OID 0)
 -- Dependencies: 223
 -- Name: unit_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3750,7 +3862,7 @@ SELECT pg_catalog.setval('port_p6.unit_id_seq', 1, false);
 
 
 --
--- TOC entry 5614 (class 0 OID 0)
+-- TOC entry 5643 (class 0 OID 0)
 -- Dependencies: 239
 -- Name: vessel_call_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3759,7 +3871,7 @@ SELECT pg_catalog.setval('port_p6.vessel_call_id_seq', 1, false);
 
 
 --
--- TOC entry 5615 (class 0 OID 0)
+-- TOC entry 5644 (class 0 OID 0)
 -- Dependencies: 241
 -- Name: vessel_call_service_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3768,7 +3880,7 @@ SELECT pg_catalog.setval('port_p6.vessel_call_service_id_seq', 1, false);
 
 
 --
--- TOC entry 5616 (class 0 OID 0)
+-- TOC entry 5645 (class 0 OID 0)
 -- Dependencies: 237
 -- Name: vessel_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3777,7 +3889,7 @@ SELECT pg_catalog.setval('port_p6.vessel_id_seq', 1, false);
 
 
 --
--- TOC entry 5617 (class 0 OID 0)
+-- TOC entry 5646 (class 0 OID 0)
 -- Dependencies: 221
 -- Name: vessel_status_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3786,7 +3898,7 @@ SELECT pg_catalog.setval('port_p6.vessel_status_id_seq', 1, false);
 
 
 --
--- TOC entry 5618 (class 0 OID 0)
+-- TOC entry 5647 (class 0 OID 0)
 -- Dependencies: 217
 -- Name: vessel_type_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3795,7 +3907,7 @@ SELECT pg_catalog.setval('port_p6.vessel_type_id_seq', 1, false);
 
 
 --
--- TOC entry 5619 (class 0 OID 0)
+-- TOC entry 5648 (class 0 OID 0)
 -- Dependencies: 247
 -- Name: warehouse_order_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3804,7 +3916,7 @@ SELECT pg_catalog.setval('port_p6.warehouse_order_id_seq', 1, false);
 
 
 --
--- TOC entry 5620 (class 0 OID 0)
+-- TOC entry 5649 (class 0 OID 0)
 -- Dependencies: 249
 -- Name: warehouse_order_item_id_seq; Type: SEQUENCE SET; Schema: port_p6; Owner: -
 --
@@ -3813,7 +3925,7 @@ SELECT pg_catalog.setval('port_p6.warehouse_order_item_id_seq', 1, false);
 
 
 --
--- TOC entry 5621 (class 0 OID 0)
+-- TOC entry 5650 (class 0 OID 0)
 -- Dependencies: 264
 -- Name: berth_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3822,7 +3934,7 @@ SELECT pg_catalog.setval('port_p7.berth_id_seq', 10, true);
 
 
 --
--- TOC entry 5622 (class 0 OID 0)
+-- TOC entry 5651 (class 0 OID 0)
 -- Dependencies: 280
 -- Name: cargo_operation_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3831,7 +3943,7 @@ SELECT pg_catalog.setval('port_p7.cargo_operation_id_seq', 10, true);
 
 
 --
--- TOC entry 5623 (class 0 OID 0)
+-- TOC entry 5652 (class 0 OID 0)
 -- Dependencies: 282
 -- Name: cargo_operation_item_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3840,7 +3952,7 @@ SELECT pg_catalog.setval('port_p7.cargo_operation_item_id_seq', 10, true);
 
 
 --
--- TOC entry 5624 (class 0 OID 0)
+-- TOC entry 5653 (class 0 OID 0)
 -- Dependencies: 256
 -- Name: cargo_type_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3849,7 +3961,7 @@ SELECT pg_catalog.setval('port_p7.cargo_type_id_seq', 10, true);
 
 
 --
--- TOC entry 5625 (class 0 OID 0)
+-- TOC entry 5654 (class 0 OID 0)
 -- Dependencies: 270
 -- Name: consignee_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3858,7 +3970,7 @@ SELECT pg_catalog.setval('port_p7.consignee_id_seq', 10, true);
 
 
 --
--- TOC entry 5626 (class 0 OID 0)
+-- TOC entry 5655 (class 0 OID 0)
 -- Dependencies: 268
 -- Name: consignor_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3867,7 +3979,7 @@ SELECT pg_catalog.setval('port_p7.consignor_id_seq', 10, true);
 
 
 --
--- TOC entry 5627 (class 0 OID 0)
+-- TOC entry 5656 (class 0 OID 0)
 -- Dependencies: 272
 -- Name: employee_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3876,7 +3988,7 @@ SELECT pg_catalog.setval('port_p7.employee_id_seq', 10, true);
 
 
 --
--- TOC entry 5628 (class 0 OID 0)
+-- TOC entry 5657 (class 0 OID 0)
 -- Dependencies: 262
 -- Name: fee_type_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3885,7 +3997,16 @@ SELECT pg_catalog.setval('port_p7.fee_type_id_seq', 10, true);
 
 
 --
--- TOC entry 5629 (class 0 OID 0)
+-- TOC entry 5658 (class 0 OID 0)
+-- Dependencies: 290
+-- Name: port_department_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
+--
+
+SELECT pg_catalog.setval('port_p7.port_department_id_seq', 10, true);
+
+
+--
+-- TOC entry 5659 (class 0 OID 0)
 -- Dependencies: 266
 -- Name: ship_owner_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3894,7 +4015,7 @@ SELECT pg_catalog.setval('port_p7.ship_owner_id_seq', 10, true);
 
 
 --
--- TOC entry 5630 (class 0 OID 0)
+-- TOC entry 5660 (class 0 OID 0)
 -- Dependencies: 288
 -- Name: stock_balance_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3903,7 +4024,7 @@ SELECT pg_catalog.setval('port_p7.stock_balance_id_seq', 10, true);
 
 
 --
--- TOC entry 5631 (class 0 OID 0)
+-- TOC entry 5661 (class 0 OID 0)
 -- Dependencies: 260
 -- Name: unit_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3912,7 +4033,16 @@ SELECT pg_catalog.setval('port_p7.unit_id_seq', 10, true);
 
 
 --
--- TOC entry 5632 (class 0 OID 0)
+-- TOC entry 5662 (class 0 OID 0)
+-- Dependencies: 292
+-- Name: user_logs_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
+--
+
+SELECT pg_catalog.setval('port_p7.user_logs_id_seq', 10, true);
+
+
+--
+-- TOC entry 5663 (class 0 OID 0)
 -- Dependencies: 276
 -- Name: vessel_call_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3921,7 +4051,7 @@ SELECT pg_catalog.setval('port_p7.vessel_call_id_seq', 10, true);
 
 
 --
--- TOC entry 5633 (class 0 OID 0)
+-- TOC entry 5664 (class 0 OID 0)
 -- Dependencies: 278
 -- Name: vessel_call_service_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3930,7 +4060,7 @@ SELECT pg_catalog.setval('port_p7.vessel_call_service_id_seq', 20, true);
 
 
 --
--- TOC entry 5634 (class 0 OID 0)
+-- TOC entry 5665 (class 0 OID 0)
 -- Dependencies: 274
 -- Name: vessel_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3939,7 +4069,7 @@ SELECT pg_catalog.setval('port_p7.vessel_id_seq', 10, true);
 
 
 --
--- TOC entry 5635 (class 0 OID 0)
+-- TOC entry 5666 (class 0 OID 0)
 -- Dependencies: 258
 -- Name: vessel_status_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3948,7 +4078,7 @@ SELECT pg_catalog.setval('port_p7.vessel_status_id_seq', 10, true);
 
 
 --
--- TOC entry 5636 (class 0 OID 0)
+-- TOC entry 5667 (class 0 OID 0)
 -- Dependencies: 254
 -- Name: vessel_type_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3957,7 +4087,7 @@ SELECT pg_catalog.setval('port_p7.vessel_type_id_seq', 12, true);
 
 
 --
--- TOC entry 5637 (class 0 OID 0)
+-- TOC entry 5668 (class 0 OID 0)
 -- Dependencies: 284
 -- Name: warehouse_order_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3966,7 +4096,7 @@ SELECT pg_catalog.setval('port_p7.warehouse_order_id_seq', 20, true);
 
 
 --
--- TOC entry 5638 (class 0 OID 0)
+-- TOC entry 5669 (class 0 OID 0)
 -- Dependencies: 286
 -- Name: warehouse_order_item_id_seq; Type: SEQUENCE SET; Schema: port_p7; Owner: -
 --
@@ -3975,7 +4105,7 @@ SELECT pg_catalog.setval('port_p7.warehouse_order_item_id_seq', 20, true);
 
 
 --
--- TOC entry 4956 (class 2606 OID 16505)
+-- TOC entry 4969 (class 2606 OID 16505)
 -- Name: berth berth_number_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -3984,7 +4114,7 @@ ALTER TABLE ONLY port_p6.berth
 
 
 --
--- TOC entry 4958 (class 2606 OID 16503)
+-- TOC entry 4971 (class 2606 OID 16503)
 -- Name: berth berth_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -3993,7 +4123,7 @@ ALTER TABLE ONLY port_p6.berth
 
 
 --
--- TOC entry 5001 (class 2606 OID 16645)
+-- TOC entry 5014 (class 2606 OID 16645)
 -- Name: cargo_operation_item cargo_operation_item_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4002,7 +4132,7 @@ ALTER TABLE ONLY port_p6.cargo_operation_item
 
 
 --
--- TOC entry 4994 (class 2606 OID 16621)
+-- TOC entry 5007 (class 2606 OID 16621)
 -- Name: cargo_operation cargo_operation_operation_number_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4011,7 +4141,7 @@ ALTER TABLE ONLY port_p6.cargo_operation
 
 
 --
--- TOC entry 4996 (class 2606 OID 16619)
+-- TOC entry 5009 (class 2606 OID 16619)
 -- Name: cargo_operation cargo_operation_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4020,7 +4150,7 @@ ALTER TABLE ONLY port_p6.cargo_operation
 
 
 --
--- TOC entry 4937 (class 2606 OID 16464)
+-- TOC entry 4950 (class 2606 OID 16464)
 -- Name: cargo_type cargo_type_name_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4029,7 +4159,7 @@ ALTER TABLE ONLY port_p6.cargo_type
 
 
 --
--- TOC entry 4939 (class 2606 OID 16462)
+-- TOC entry 4952 (class 2606 OID 16462)
 -- Name: cargo_type cargo_type_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4038,7 +4168,7 @@ ALTER TABLE ONLY port_p6.cargo_type
 
 
 --
--- TOC entry 4966 (class 2606 OID 16527)
+-- TOC entry 4979 (class 2606 OID 16527)
 -- Name: consignee consignee_inn_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4047,7 +4177,7 @@ ALTER TABLE ONLY port_p6.consignee
 
 
 --
--- TOC entry 4968 (class 2606 OID 16525)
+-- TOC entry 4981 (class 2606 OID 16525)
 -- Name: consignee consignee_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4056,7 +4186,7 @@ ALTER TABLE ONLY port_p6.consignee
 
 
 --
--- TOC entry 4962 (class 2606 OID 16519)
+-- TOC entry 4975 (class 2606 OID 16519)
 -- Name: consignor consignor_inn_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4065,7 +4195,7 @@ ALTER TABLE ONLY port_p6.consignor
 
 
 --
--- TOC entry 4964 (class 2606 OID 16517)
+-- TOC entry 4977 (class 2606 OID 16517)
 -- Name: consignor consignor_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4074,7 +4204,7 @@ ALTER TABLE ONLY port_p6.consignor
 
 
 --
--- TOC entry 4970 (class 2606 OID 16537)
+-- TOC entry 4983 (class 2606 OID 16537)
 -- Name: employee employee_employee_number_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4083,7 +4213,7 @@ ALTER TABLE ONLY port_p6.employee
 
 
 --
--- TOC entry 4972 (class 2606 OID 16539)
+-- TOC entry 4985 (class 2606 OID 16539)
 -- Name: employee employee_login_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4092,7 +4222,7 @@ ALTER TABLE ONLY port_p6.employee
 
 
 --
--- TOC entry 4974 (class 2606 OID 16535)
+-- TOC entry 4987 (class 2606 OID 16535)
 -- Name: employee employee_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4101,7 +4231,7 @@ ALTER TABLE ONLY port_p6.employee
 
 
 --
--- TOC entry 4951 (class 2606 OID 16490)
+-- TOC entry 4964 (class 2606 OID 16490)
 -- Name: fee_type fee_type_name_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4110,7 +4240,7 @@ ALTER TABLE ONLY port_p6.fee_type
 
 
 --
--- TOC entry 4953 (class 2606 OID 16488)
+-- TOC entry 4966 (class 2606 OID 16488)
 -- Name: fee_type fee_type_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4119,7 +4249,7 @@ ALTER TABLE ONLY port_p6.fee_type
 
 
 --
--- TOC entry 4960 (class 2606 OID 16511)
+-- TOC entry 4973 (class 2606 OID 16511)
 -- Name: ship_owner ship_owner_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4128,7 +4258,7 @@ ALTER TABLE ONLY port_p6.ship_owner
 
 
 --
--- TOC entry 5020 (class 2606 OID 16724)
+-- TOC entry 5033 (class 2606 OID 16724)
 -- Name: stock_balance stock_balance_cargo_type_id_unit_id_location_batch_number_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4137,7 +4267,7 @@ ALTER TABLE ONLY port_p6.stock_balance
 
 
 --
--- TOC entry 5022 (class 2606 OID 16722)
+-- TOC entry 5035 (class 2606 OID 16722)
 -- Name: stock_balance stock_balance_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4146,7 +4276,7 @@ ALTER TABLE ONLY port_p6.stock_balance
 
 
 --
--- TOC entry 4945 (class 2606 OID 16480)
+-- TOC entry 4958 (class 2606 OID 16480)
 -- Name: unit unit_name_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4155,7 +4285,7 @@ ALTER TABLE ONLY port_p6.unit
 
 
 --
--- TOC entry 4947 (class 2606 OID 16478)
+-- TOC entry 4960 (class 2606 OID 16478)
 -- Name: unit unit_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4164,7 +4294,7 @@ ALTER TABLE ONLY port_p6.unit
 
 
 --
--- TOC entry 4949 (class 2606 OID 16482)
+-- TOC entry 4962 (class 2606 OID 16482)
 -- Name: unit unit_short_name_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4173,7 +4303,7 @@ ALTER TABLE ONLY port_p6.unit
 
 
 --
--- TOC entry 4988 (class 2606 OID 16574)
+-- TOC entry 5001 (class 2606 OID 16574)
 -- Name: vessel_call vessel_call_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4182,7 +4312,7 @@ ALTER TABLE ONLY port_p6.vessel_call
 
 
 --
--- TOC entry 4992 (class 2606 OID 16600)
+-- TOC entry 5005 (class 2606 OID 16600)
 -- Name: vessel_call_service vessel_call_service_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4191,7 +4321,7 @@ ALTER TABLE ONLY port_p6.vessel_call_service
 
 
 --
--- TOC entry 4979 (class 2606 OID 16547)
+-- TOC entry 4992 (class 2606 OID 16547)
 -- Name: vessel vessel_call_sign_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4200,7 +4330,7 @@ ALTER TABLE ONLY port_p6.vessel
 
 
 --
--- TOC entry 4981 (class 2606 OID 16549)
+-- TOC entry 4994 (class 2606 OID 16549)
 -- Name: vessel vessel_imo_number_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4209,7 +4339,7 @@ ALTER TABLE ONLY port_p6.vessel
 
 
 --
--- TOC entry 4983 (class 2606 OID 16545)
+-- TOC entry 4996 (class 2606 OID 16545)
 -- Name: vessel vessel_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4218,7 +4348,7 @@ ALTER TABLE ONLY port_p6.vessel
 
 
 --
--- TOC entry 4941 (class 2606 OID 16472)
+-- TOC entry 4954 (class 2606 OID 16472)
 -- Name: vessel_status vessel_status_name_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4227,7 +4357,7 @@ ALTER TABLE ONLY port_p6.vessel_status
 
 
 --
--- TOC entry 4943 (class 2606 OID 16470)
+-- TOC entry 4956 (class 2606 OID 16470)
 -- Name: vessel_status vessel_status_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4236,7 +4366,7 @@ ALTER TABLE ONLY port_p6.vessel_status
 
 
 --
--- TOC entry 4933 (class 2606 OID 16455)
+-- TOC entry 4946 (class 2606 OID 16455)
 -- Name: vessel_type vessel_type_name_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4245,7 +4375,7 @@ ALTER TABLE ONLY port_p6.vessel_type
 
 
 --
--- TOC entry 4935 (class 2606 OID 16453)
+-- TOC entry 4948 (class 2606 OID 16453)
 -- Name: vessel_type vessel_type_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4254,7 +4384,7 @@ ALTER TABLE ONLY port_p6.vessel_type
 
 
 --
--- TOC entry 5016 (class 2606 OID 16696)
+-- TOC entry 5029 (class 2606 OID 16696)
 -- Name: warehouse_order_item warehouse_order_item_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4263,7 +4393,7 @@ ALTER TABLE ONLY port_p6.warehouse_order_item
 
 
 --
--- TOC entry 5009 (class 2606 OID 16672)
+-- TOC entry 5022 (class 2606 OID 16672)
 -- Name: warehouse_order warehouse_order_order_number_key; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4272,7 +4402,7 @@ ALTER TABLE ONLY port_p6.warehouse_order
 
 
 --
--- TOC entry 5011 (class 2606 OID 16670)
+-- TOC entry 5024 (class 2606 OID 16670)
 -- Name: warehouse_order warehouse_order_pkey; Type: CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4281,7 +4411,7 @@ ALTER TABLE ONLY port_p6.warehouse_order
 
 
 --
--- TOC entry 5047 (class 2606 OID 16811)
+-- TOC entry 5060 (class 2606 OID 16811)
 -- Name: berth berth_number_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4290,7 +4420,7 @@ ALTER TABLE ONLY port_p7.berth
 
 
 --
--- TOC entry 5049 (class 2606 OID 16809)
+-- TOC entry 5062 (class 2606 OID 16809)
 -- Name: berth berth_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4299,7 +4429,7 @@ ALTER TABLE ONLY port_p7.berth
 
 
 --
--- TOC entry 5092 (class 2606 OID 16977)
+-- TOC entry 5105 (class 2606 OID 16977)
 -- Name: cargo_operation_item cargo_operation_item_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4308,7 +4438,7 @@ ALTER TABLE ONLY port_p7.cargo_operation_item
 
 
 --
--- TOC entry 5085 (class 2606 OID 16952)
+-- TOC entry 5098 (class 2606 OID 16952)
 -- Name: cargo_operation cargo_operation_operation_number_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4317,7 +4447,7 @@ ALTER TABLE ONLY port_p7.cargo_operation
 
 
 --
--- TOC entry 5087 (class 2606 OID 16950)
+-- TOC entry 5100 (class 2606 OID 16950)
 -- Name: cargo_operation cargo_operation_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4326,7 +4456,7 @@ ALTER TABLE ONLY port_p7.cargo_operation
 
 
 --
--- TOC entry 5028 (class 2606 OID 16763)
+-- TOC entry 5041 (class 2606 OID 16763)
 -- Name: cargo_type cargo_type_name_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4335,7 +4465,7 @@ ALTER TABLE ONLY port_p7.cargo_type
 
 
 --
--- TOC entry 5030 (class 2606 OID 16761)
+-- TOC entry 5043 (class 2606 OID 16761)
 -- Name: cargo_type cargo_type_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4344,7 +4474,7 @@ ALTER TABLE ONLY port_p7.cargo_type
 
 
 --
--- TOC entry 5057 (class 2606 OID 16842)
+-- TOC entry 5070 (class 2606 OID 16842)
 -- Name: consignee consignee_inn_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4353,7 +4483,7 @@ ALTER TABLE ONLY port_p7.consignee
 
 
 --
--- TOC entry 5059 (class 2606 OID 16840)
+-- TOC entry 5072 (class 2606 OID 16840)
 -- Name: consignee consignee_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4362,7 +4492,7 @@ ALTER TABLE ONLY port_p7.consignee
 
 
 --
--- TOC entry 5053 (class 2606 OID 16831)
+-- TOC entry 5066 (class 2606 OID 16831)
 -- Name: consignor consignor_inn_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4371,7 +4501,7 @@ ALTER TABLE ONLY port_p7.consignor
 
 
 --
--- TOC entry 5055 (class 2606 OID 16829)
+-- TOC entry 5068 (class 2606 OID 16829)
 -- Name: consignor consignor_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4380,7 +4510,7 @@ ALTER TABLE ONLY port_p7.consignor
 
 
 --
--- TOC entry 5061 (class 2606 OID 16857)
+-- TOC entry 5074 (class 2606 OID 16857)
 -- Name: employee employee_employee_number_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4389,7 +4519,7 @@ ALTER TABLE ONLY port_p7.employee
 
 
 --
--- TOC entry 5063 (class 2606 OID 16859)
+-- TOC entry 5076 (class 2606 OID 16859)
 -- Name: employee employee_login_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4398,7 +4528,7 @@ ALTER TABLE ONLY port_p7.employee
 
 
 --
--- TOC entry 5065 (class 2606 OID 16855)
+-- TOC entry 5078 (class 2606 OID 16855)
 -- Name: employee employee_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4407,7 +4537,7 @@ ALTER TABLE ONLY port_p7.employee
 
 
 --
--- TOC entry 5042 (class 2606 OID 16794)
+-- TOC entry 5055 (class 2606 OID 16794)
 -- Name: fee_type fee_type_name_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4416,7 +4546,7 @@ ALTER TABLE ONLY port_p7.fee_type
 
 
 --
--- TOC entry 5044 (class 2606 OID 16792)
+-- TOC entry 5057 (class 2606 OID 16792)
 -- Name: fee_type fee_type_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4425,7 +4555,25 @@ ALTER TABLE ONLY port_p7.fee_type
 
 
 --
--- TOC entry 5051 (class 2606 OID 16820)
+-- TOC entry 5128 (class 2606 OID 17090)
+-- Name: port_department port_department_name_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
+--
+
+ALTER TABLE ONLY port_p7.port_department
+    ADD CONSTRAINT port_department_name_key UNIQUE (name);
+
+
+--
+-- TOC entry 5131 (class 2606 OID 17088)
+-- Name: port_department port_department_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
+--
+
+ALTER TABLE ONLY port_p7.port_department
+    ADD CONSTRAINT port_department_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 5064 (class 2606 OID 16820)
 -- Name: ship_owner ship_owner_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4434,7 +4582,7 @@ ALTER TABLE ONLY port_p7.ship_owner
 
 
 --
--- TOC entry 5111 (class 2606 OID 17065)
+-- TOC entry 5124 (class 2606 OID 17065)
 -- Name: stock_balance stock_balance_cargo_type_id_unit_id_location_batch_number_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4443,7 +4591,7 @@ ALTER TABLE ONLY port_p7.stock_balance
 
 
 --
--- TOC entry 5113 (class 2606 OID 17063)
+-- TOC entry 5126 (class 2606 OID 17063)
 -- Name: stock_balance stock_balance_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4452,7 +4600,7 @@ ALTER TABLE ONLY port_p7.stock_balance
 
 
 --
--- TOC entry 5036 (class 2606 OID 16782)
+-- TOC entry 5049 (class 2606 OID 16782)
 -- Name: unit unit_name_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4461,7 +4609,7 @@ ALTER TABLE ONLY port_p7.unit
 
 
 --
--- TOC entry 5038 (class 2606 OID 16780)
+-- TOC entry 5051 (class 2606 OID 16780)
 -- Name: unit unit_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4470,7 +4618,7 @@ ALTER TABLE ONLY port_p7.unit
 
 
 --
--- TOC entry 5040 (class 2606 OID 16784)
+-- TOC entry 5053 (class 2606 OID 16784)
 -- Name: unit unit_short_name_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4479,7 +4627,16 @@ ALTER TABLE ONLY port_p7.unit
 
 
 --
--- TOC entry 5079 (class 2606 OID 16901)
+-- TOC entry 5134 (class 2606 OID 17105)
+-- Name: user_logs user_logs_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
+--
+
+ALTER TABLE ONLY port_p7.user_logs
+    ADD CONSTRAINT user_logs_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 5092 (class 2606 OID 16901)
 -- Name: vessel_call vessel_call_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4488,7 +4645,7 @@ ALTER TABLE ONLY port_p7.vessel_call
 
 
 --
--- TOC entry 5083 (class 2606 OID 16929)
+-- TOC entry 5096 (class 2606 OID 16929)
 -- Name: vessel_call_service vessel_call_service_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4497,7 +4654,7 @@ ALTER TABLE ONLY port_p7.vessel_call_service
 
 
 --
--- TOC entry 5070 (class 2606 OID 16872)
+-- TOC entry 5083 (class 2606 OID 16872)
 -- Name: vessel vessel_call_sign_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4506,7 +4663,7 @@ ALTER TABLE ONLY port_p7.vessel
 
 
 --
--- TOC entry 5072 (class 2606 OID 16874)
+-- TOC entry 5085 (class 2606 OID 16874)
 -- Name: vessel vessel_imo_number_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4515,7 +4672,7 @@ ALTER TABLE ONLY port_p7.vessel
 
 
 --
--- TOC entry 5074 (class 2606 OID 16870)
+-- TOC entry 5087 (class 2606 OID 16870)
 -- Name: vessel vessel_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4524,7 +4681,7 @@ ALTER TABLE ONLY port_p7.vessel
 
 
 --
--- TOC entry 5032 (class 2606 OID 16772)
+-- TOC entry 5045 (class 2606 OID 16772)
 -- Name: vessel_status vessel_status_name_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4533,7 +4690,7 @@ ALTER TABLE ONLY port_p7.vessel_status
 
 
 --
--- TOC entry 5034 (class 2606 OID 16770)
+-- TOC entry 5047 (class 2606 OID 16770)
 -- Name: vessel_status vessel_status_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4542,7 +4699,7 @@ ALTER TABLE ONLY port_p7.vessel_status
 
 
 --
--- TOC entry 5024 (class 2606 OID 16752)
+-- TOC entry 5037 (class 2606 OID 16752)
 -- Name: vessel_type vessel_type_name_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4551,7 +4708,7 @@ ALTER TABLE ONLY port_p7.vessel_type
 
 
 --
--- TOC entry 5026 (class 2606 OID 16750)
+-- TOC entry 5039 (class 2606 OID 16750)
 -- Name: vessel_type vessel_type_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4560,7 +4717,7 @@ ALTER TABLE ONLY port_p7.vessel_type
 
 
 --
--- TOC entry 5107 (class 2606 OID 17034)
+-- TOC entry 5120 (class 2606 OID 17034)
 -- Name: warehouse_order_item warehouse_order_item_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4569,7 +4726,7 @@ ALTER TABLE ONLY port_p7.warehouse_order_item
 
 
 --
--- TOC entry 5100 (class 2606 OID 17007)
+-- TOC entry 5113 (class 2606 OID 17007)
 -- Name: warehouse_order warehouse_order_order_number_key; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4578,7 +4735,7 @@ ALTER TABLE ONLY port_p7.warehouse_order
 
 
 --
--- TOC entry 5102 (class 2606 OID 17005)
+-- TOC entry 5115 (class 2606 OID 17005)
 -- Name: warehouse_order warehouse_order_pkey; Type: CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -4587,7 +4744,7 @@ ALTER TABLE ONLY port_p7.warehouse_order
 
 
 --
--- TOC entry 4997 (class 1259 OID 16639)
+-- TOC entry 5010 (class 1259 OID 16639)
 -- Name: ix_cargo_operation_consignee_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4595,7 +4752,7 @@ CREATE INDEX ix_cargo_operation_consignee_id ON port_p6.cargo_operation USING bt
 
 
 --
--- TOC entry 4998 (class 1259 OID 16638)
+-- TOC entry 5011 (class 1259 OID 16638)
 -- Name: ix_cargo_operation_consignor_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4603,7 +4760,7 @@ CREATE INDEX ix_cargo_operation_consignor_id ON port_p6.cargo_operation USING bt
 
 
 --
--- TOC entry 5002 (class 1259 OID 16661)
+-- TOC entry 5015 (class 1259 OID 16661)
 -- Name: ix_cargo_operation_item_cargo_operation_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4611,7 +4768,7 @@ CREATE INDEX ix_cargo_operation_item_cargo_operation_id ON port_p6.cargo_operati
 
 
 --
--- TOC entry 5003 (class 1259 OID 16662)
+-- TOC entry 5016 (class 1259 OID 16662)
 -- Name: ix_cargo_operation_item_cargo_type_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4619,7 +4776,7 @@ CREATE INDEX ix_cargo_operation_item_cargo_type_id ON port_p6.cargo_operation_it
 
 
 --
--- TOC entry 5004 (class 1259 OID 16663)
+-- TOC entry 5017 (class 1259 OID 16663)
 -- Name: ix_cargo_operation_item_unit_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4627,7 +4784,7 @@ CREATE INDEX ix_cargo_operation_item_unit_id ON port_p6.cargo_operation_item USI
 
 
 --
--- TOC entry 4999 (class 1259 OID 16637)
+-- TOC entry 5012 (class 1259 OID 16637)
 -- Name: ix_cargo_operation_vessel_call_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4635,7 +4792,7 @@ CREATE INDEX ix_cargo_operation_vessel_call_id ON port_p6.cargo_operation USING 
 
 
 --
--- TOC entry 4954 (class 1259 OID 16496)
+-- TOC entry 4967 (class 1259 OID 16496)
 -- Name: ix_fee_type_unit_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4643,7 +4800,7 @@ CREATE INDEX ix_fee_type_unit_id ON port_p6.fee_type USING btree (unit_id);
 
 
 --
--- TOC entry 5017 (class 1259 OID 16735)
+-- TOC entry 5030 (class 1259 OID 16735)
 -- Name: ix_stock_balance_cargo_type_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4651,7 +4808,7 @@ CREATE INDEX ix_stock_balance_cargo_type_id ON port_p6.stock_balance USING btree
 
 
 --
--- TOC entry 5018 (class 1259 OID 16736)
+-- TOC entry 5031 (class 1259 OID 16736)
 -- Name: ix_stock_balance_unit_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4659,7 +4816,7 @@ CREATE INDEX ix_stock_balance_unit_id ON port_p6.stock_balance USING btree (unit
 
 
 --
--- TOC entry 4984 (class 1259 OID 16591)
+-- TOC entry 4997 (class 1259 OID 16591)
 -- Name: ix_vessel_call_berth_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4667,7 +4824,7 @@ CREATE INDEX ix_vessel_call_berth_id ON port_p6.vessel_call USING btree (berth_i
 
 
 --
--- TOC entry 4985 (class 1259 OID 16592)
+-- TOC entry 4998 (class 1259 OID 16592)
 -- Name: ix_vessel_call_dispatcher_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4675,7 +4832,7 @@ CREATE INDEX ix_vessel_call_dispatcher_id ON port_p6.vessel_call USING btree (di
 
 
 --
--- TOC entry 4989 (class 1259 OID 16612)
+-- TOC entry 5002 (class 1259 OID 16612)
 -- Name: ix_vessel_call_service_fee_type_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4683,7 +4840,7 @@ CREATE INDEX ix_vessel_call_service_fee_type_id ON port_p6.vessel_call_service U
 
 
 --
--- TOC entry 4990 (class 1259 OID 16611)
+-- TOC entry 5003 (class 1259 OID 16611)
 -- Name: ix_vessel_call_service_vessel_call_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4691,7 +4848,7 @@ CREATE INDEX ix_vessel_call_service_vessel_call_id ON port_p6.vessel_call_servic
 
 
 --
--- TOC entry 4986 (class 1259 OID 16590)
+-- TOC entry 4999 (class 1259 OID 16590)
 -- Name: ix_vessel_call_vessel_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4699,7 +4856,7 @@ CREATE INDEX ix_vessel_call_vessel_id ON port_p6.vessel_call USING btree (vessel
 
 
 --
--- TOC entry 4975 (class 1259 OID 16566)
+-- TOC entry 4988 (class 1259 OID 16566)
 -- Name: ix_vessel_ship_owner_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4707,7 +4864,7 @@ CREATE INDEX ix_vessel_ship_owner_id ON port_p6.vessel USING btree (ship_owner_i
 
 
 --
--- TOC entry 4976 (class 1259 OID 16567)
+-- TOC entry 4989 (class 1259 OID 16567)
 -- Name: ix_vessel_vessel_status_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4715,7 +4872,7 @@ CREATE INDEX ix_vessel_vessel_status_id ON port_p6.vessel USING btree (vessel_st
 
 
 --
--- TOC entry 4977 (class 1259 OID 16565)
+-- TOC entry 4990 (class 1259 OID 16565)
 -- Name: ix_vessel_vessel_type_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4723,7 +4880,7 @@ CREATE INDEX ix_vessel_vessel_type_id ON port_p6.vessel USING btree (vessel_type
 
 
 --
--- TOC entry 5005 (class 1259 OID 16689)
+-- TOC entry 5018 (class 1259 OID 16689)
 -- Name: ix_warehouse_order_consignee_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4731,7 +4888,7 @@ CREATE INDEX ix_warehouse_order_consignee_id ON port_p6.warehouse_order USING bt
 
 
 --
--- TOC entry 5006 (class 1259 OID 16688)
+-- TOC entry 5019 (class 1259 OID 16688)
 -- Name: ix_warehouse_order_consignor_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4739,7 +4896,7 @@ CREATE INDEX ix_warehouse_order_consignor_id ON port_p6.warehouse_order USING bt
 
 
 --
--- TOC entry 5012 (class 1259 OID 16713)
+-- TOC entry 5025 (class 1259 OID 16713)
 -- Name: ix_warehouse_order_item_cargo_type_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4747,7 +4904,7 @@ CREATE INDEX ix_warehouse_order_item_cargo_type_id ON port_p6.warehouse_order_it
 
 
 --
--- TOC entry 5013 (class 1259 OID 16714)
+-- TOC entry 5026 (class 1259 OID 16714)
 -- Name: ix_warehouse_order_item_unit_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4755,7 +4912,7 @@ CREATE INDEX ix_warehouse_order_item_unit_id ON port_p6.warehouse_order_item USI
 
 
 --
--- TOC entry 5014 (class 1259 OID 16712)
+-- TOC entry 5027 (class 1259 OID 16712)
 -- Name: ix_warehouse_order_item_warehouse_order_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4763,7 +4920,7 @@ CREATE INDEX ix_warehouse_order_item_warehouse_order_id ON port_p6.warehouse_ord
 
 
 --
--- TOC entry 5007 (class 1259 OID 16690)
+-- TOC entry 5020 (class 1259 OID 16690)
 -- Name: ix_warehouse_order_responsible_emp_id; Type: INDEX; Schema: port_p6; Owner: -
 --
 
@@ -4771,7 +4928,7 @@ CREATE INDEX ix_warehouse_order_responsible_emp_id ON port_p6.warehouse_order US
 
 
 --
--- TOC entry 5088 (class 1259 OID 16970)
+-- TOC entry 5101 (class 1259 OID 16970)
 -- Name: ix_cargo_operation_consignee_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4779,7 +4936,7 @@ CREATE INDEX ix_cargo_operation_consignee_id ON port_p7.cargo_operation USING bt
 
 
 --
--- TOC entry 5089 (class 1259 OID 16969)
+-- TOC entry 5102 (class 1259 OID 16969)
 -- Name: ix_cargo_operation_consignor_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4787,7 +4944,7 @@ CREATE INDEX ix_cargo_operation_consignor_id ON port_p7.cargo_operation USING bt
 
 
 --
--- TOC entry 5093 (class 1259 OID 16993)
+-- TOC entry 5106 (class 1259 OID 16993)
 -- Name: ix_cargo_operation_item_cargo_operation_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4795,7 +4952,7 @@ CREATE INDEX ix_cargo_operation_item_cargo_operation_id ON port_p7.cargo_operati
 
 
 --
--- TOC entry 5094 (class 1259 OID 16994)
+-- TOC entry 5107 (class 1259 OID 16994)
 -- Name: ix_cargo_operation_item_cargo_type_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4803,7 +4960,7 @@ CREATE INDEX ix_cargo_operation_item_cargo_type_id ON port_p7.cargo_operation_it
 
 
 --
--- TOC entry 5095 (class 1259 OID 16995)
+-- TOC entry 5108 (class 1259 OID 16995)
 -- Name: ix_cargo_operation_item_unit_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4811,7 +4968,7 @@ CREATE INDEX ix_cargo_operation_item_unit_id ON port_p7.cargo_operation_item USI
 
 
 --
--- TOC entry 5090 (class 1259 OID 16968)
+-- TOC entry 5103 (class 1259 OID 16968)
 -- Name: ix_cargo_operation_vessel_call_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4819,7 +4976,7 @@ CREATE INDEX ix_cargo_operation_vessel_call_id ON port_p7.cargo_operation USING 
 
 
 --
--- TOC entry 5045 (class 1259 OID 16800)
+-- TOC entry 5058 (class 1259 OID 16800)
 -- Name: ix_fee_type_unit_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4827,7 +4984,7 @@ CREATE INDEX ix_fee_type_unit_id ON port_p7.fee_type USING btree (unit_id);
 
 
 --
--- TOC entry 5108 (class 1259 OID 17076)
+-- TOC entry 5121 (class 1259 OID 17076)
 -- Name: ix_stock_balance_cargo_type_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4835,7 +4992,7 @@ CREATE INDEX ix_stock_balance_cargo_type_id ON port_p7.stock_balance USING btree
 
 
 --
--- TOC entry 5109 (class 1259 OID 17077)
+-- TOC entry 5122 (class 1259 OID 17077)
 -- Name: ix_stock_balance_unit_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4843,7 +5000,7 @@ CREATE INDEX ix_stock_balance_unit_id ON port_p7.stock_balance USING btree (unit
 
 
 --
--- TOC entry 5075 (class 1259 OID 16918)
+-- TOC entry 5088 (class 1259 OID 16918)
 -- Name: ix_vessel_call_berth_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4851,7 +5008,7 @@ CREATE INDEX ix_vessel_call_berth_id ON port_p7.vessel_call USING btree (berth_i
 
 
 --
--- TOC entry 5076 (class 1259 OID 16919)
+-- TOC entry 5089 (class 1259 OID 16919)
 -- Name: ix_vessel_call_dispatcher_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4859,7 +5016,7 @@ CREATE INDEX ix_vessel_call_dispatcher_id ON port_p7.vessel_call USING btree (di
 
 
 --
--- TOC entry 5080 (class 1259 OID 16941)
+-- TOC entry 5093 (class 1259 OID 16941)
 -- Name: ix_vessel_call_service_fee_type_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4867,7 +5024,7 @@ CREATE INDEX ix_vessel_call_service_fee_type_id ON port_p7.vessel_call_service U
 
 
 --
--- TOC entry 5081 (class 1259 OID 16940)
+-- TOC entry 5094 (class 1259 OID 16940)
 -- Name: ix_vessel_call_service_vessel_call_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4875,7 +5032,7 @@ CREATE INDEX ix_vessel_call_service_vessel_call_id ON port_p7.vessel_call_servic
 
 
 --
--- TOC entry 5077 (class 1259 OID 16917)
+-- TOC entry 5090 (class 1259 OID 16917)
 -- Name: ix_vessel_call_vessel_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4883,7 +5040,7 @@ CREATE INDEX ix_vessel_call_vessel_id ON port_p7.vessel_call USING btree (vessel
 
 
 --
--- TOC entry 5066 (class 1259 OID 16891)
+-- TOC entry 5079 (class 1259 OID 16891)
 -- Name: ix_vessel_ship_owner_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4891,7 +5048,7 @@ CREATE INDEX ix_vessel_ship_owner_id ON port_p7.vessel USING btree (ship_owner_i
 
 
 --
--- TOC entry 5067 (class 1259 OID 16892)
+-- TOC entry 5080 (class 1259 OID 16892)
 -- Name: ix_vessel_vessel_status_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4899,7 +5056,7 @@ CREATE INDEX ix_vessel_vessel_status_id ON port_p7.vessel USING btree (vessel_st
 
 
 --
--- TOC entry 5068 (class 1259 OID 16890)
+-- TOC entry 5081 (class 1259 OID 16890)
 -- Name: ix_vessel_vessel_type_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4907,7 +5064,7 @@ CREATE INDEX ix_vessel_vessel_type_id ON port_p7.vessel USING btree (vessel_type
 
 
 --
--- TOC entry 5096 (class 1259 OID 17024)
+-- TOC entry 5109 (class 1259 OID 17024)
 -- Name: ix_warehouse_order_consignee_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4915,7 +5072,7 @@ CREATE INDEX ix_warehouse_order_consignee_id ON port_p7.warehouse_order USING bt
 
 
 --
--- TOC entry 5097 (class 1259 OID 17023)
+-- TOC entry 5110 (class 1259 OID 17023)
 -- Name: ix_warehouse_order_consignor_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4923,7 +5080,7 @@ CREATE INDEX ix_warehouse_order_consignor_id ON port_p7.warehouse_order USING bt
 
 
 --
--- TOC entry 5103 (class 1259 OID 17051)
+-- TOC entry 5116 (class 1259 OID 17051)
 -- Name: ix_warehouse_order_item_cargo_type_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4931,7 +5088,7 @@ CREATE INDEX ix_warehouse_order_item_cargo_type_id ON port_p7.warehouse_order_it
 
 
 --
--- TOC entry 5104 (class 1259 OID 17052)
+-- TOC entry 5117 (class 1259 OID 17052)
 -- Name: ix_warehouse_order_item_unit_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4939,7 +5096,7 @@ CREATE INDEX ix_warehouse_order_item_unit_id ON port_p7.warehouse_order_item USI
 
 
 --
--- TOC entry 5105 (class 1259 OID 17050)
+-- TOC entry 5118 (class 1259 OID 17050)
 -- Name: ix_warehouse_order_item_warehouse_order_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4947,7 +5104,7 @@ CREATE INDEX ix_warehouse_order_item_warehouse_order_id ON port_p7.warehouse_ord
 
 
 --
--- TOC entry 5098 (class 1259 OID 17025)
+-- TOC entry 5111 (class 1259 OID 17025)
 -- Name: ix_warehouse_order_responsible_emp_id; Type: INDEX; Schema: port_p7; Owner: -
 --
 
@@ -4955,7 +5112,23 @@ CREATE INDEX ix_warehouse_order_responsible_emp_id ON port_p7.warehouse_order US
 
 
 --
--- TOC entry 5123 (class 2606 OID 16632)
+-- TOC entry 5129 (class 1259 OID 17096)
+-- Name: port_department_parent_idx; Type: INDEX; Schema: port_p7; Owner: -
+--
+
+CREATE INDEX port_department_parent_idx ON port_p7.port_department USING btree (parent_id);
+
+
+--
+-- TOC entry 5132 (class 1259 OID 17111)
+-- Name: user_logs_employee_idx; Type: INDEX; Schema: port_p7; Owner: -
+--
+
+CREATE INDEX user_logs_employee_idx ON port_p7.user_logs USING btree (employee_id);
+
+
+--
+-- TOC entry 5144 (class 2606 OID 16632)
 -- Name: cargo_operation cargo_operation_consignee_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4964,7 +5137,7 @@ ALTER TABLE ONLY port_p6.cargo_operation
 
 
 --
--- TOC entry 5124 (class 2606 OID 16627)
+-- TOC entry 5145 (class 2606 OID 16627)
 -- Name: cargo_operation cargo_operation_consignor_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4973,7 +5146,7 @@ ALTER TABLE ONLY port_p6.cargo_operation
 
 
 --
--- TOC entry 5126 (class 2606 OID 16646)
+-- TOC entry 5147 (class 2606 OID 16646)
 -- Name: cargo_operation_item cargo_operation_item_cargo_operation_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4982,7 +5155,7 @@ ALTER TABLE ONLY port_p6.cargo_operation_item
 
 
 --
--- TOC entry 5127 (class 2606 OID 16651)
+-- TOC entry 5148 (class 2606 OID 16651)
 -- Name: cargo_operation_item cargo_operation_item_cargo_type_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -4991,7 +5164,7 @@ ALTER TABLE ONLY port_p6.cargo_operation_item
 
 
 --
--- TOC entry 5128 (class 2606 OID 16656)
+-- TOC entry 5149 (class 2606 OID 16656)
 -- Name: cargo_operation_item cargo_operation_item_unit_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5000,7 +5173,7 @@ ALTER TABLE ONLY port_p6.cargo_operation_item
 
 
 --
--- TOC entry 5125 (class 2606 OID 16622)
+-- TOC entry 5146 (class 2606 OID 16622)
 -- Name: cargo_operation cargo_operation_vessel_call_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5009,7 +5182,7 @@ ALTER TABLE ONLY port_p6.cargo_operation
 
 
 --
--- TOC entry 5114 (class 2606 OID 16491)
+-- TOC entry 5135 (class 2606 OID 16491)
 -- Name: fee_type fee_type_unit_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5018,7 +5191,7 @@ ALTER TABLE ONLY port_p6.fee_type
 
 
 --
--- TOC entry 5135 (class 2606 OID 16725)
+-- TOC entry 5156 (class 2606 OID 16725)
 -- Name: stock_balance stock_balance_cargo_type_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5027,7 +5200,7 @@ ALTER TABLE ONLY port_p6.stock_balance
 
 
 --
--- TOC entry 5136 (class 2606 OID 16730)
+-- TOC entry 5157 (class 2606 OID 16730)
 -- Name: stock_balance stock_balance_unit_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5036,7 +5209,7 @@ ALTER TABLE ONLY port_p6.stock_balance
 
 
 --
--- TOC entry 5118 (class 2606 OID 16580)
+-- TOC entry 5139 (class 2606 OID 16580)
 -- Name: vessel_call vessel_call_berth_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5045,7 +5218,7 @@ ALTER TABLE ONLY port_p6.vessel_call
 
 
 --
--- TOC entry 5119 (class 2606 OID 16585)
+-- TOC entry 5140 (class 2606 OID 16585)
 -- Name: vessel_call vessel_call_dispatcher_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5054,7 +5227,7 @@ ALTER TABLE ONLY port_p6.vessel_call
 
 
 --
--- TOC entry 5121 (class 2606 OID 16606)
+-- TOC entry 5142 (class 2606 OID 16606)
 -- Name: vessel_call_service vessel_call_service_fee_type_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5063,7 +5236,7 @@ ALTER TABLE ONLY port_p6.vessel_call_service
 
 
 --
--- TOC entry 5122 (class 2606 OID 16601)
+-- TOC entry 5143 (class 2606 OID 16601)
 -- Name: vessel_call_service vessel_call_service_vessel_call_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5072,7 +5245,7 @@ ALTER TABLE ONLY port_p6.vessel_call_service
 
 
 --
--- TOC entry 5120 (class 2606 OID 16575)
+-- TOC entry 5141 (class 2606 OID 16575)
 -- Name: vessel_call vessel_call_vessel_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5081,7 +5254,7 @@ ALTER TABLE ONLY port_p6.vessel_call
 
 
 --
--- TOC entry 5115 (class 2606 OID 16555)
+-- TOC entry 5136 (class 2606 OID 16555)
 -- Name: vessel vessel_ship_owner_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5090,7 +5263,7 @@ ALTER TABLE ONLY port_p6.vessel
 
 
 --
--- TOC entry 5116 (class 2606 OID 16560)
+-- TOC entry 5137 (class 2606 OID 16560)
 -- Name: vessel vessel_vessel_status_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5099,7 +5272,7 @@ ALTER TABLE ONLY port_p6.vessel
 
 
 --
--- TOC entry 5117 (class 2606 OID 16550)
+-- TOC entry 5138 (class 2606 OID 16550)
 -- Name: vessel vessel_vessel_type_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5108,7 +5281,7 @@ ALTER TABLE ONLY port_p6.vessel
 
 
 --
--- TOC entry 5129 (class 2606 OID 16678)
+-- TOC entry 5150 (class 2606 OID 16678)
 -- Name: warehouse_order warehouse_order_consignee_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5117,7 +5290,7 @@ ALTER TABLE ONLY port_p6.warehouse_order
 
 
 --
--- TOC entry 5130 (class 2606 OID 16673)
+-- TOC entry 5151 (class 2606 OID 16673)
 -- Name: warehouse_order warehouse_order_consignor_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5126,7 +5299,7 @@ ALTER TABLE ONLY port_p6.warehouse_order
 
 
 --
--- TOC entry 5132 (class 2606 OID 16702)
+-- TOC entry 5153 (class 2606 OID 16702)
 -- Name: warehouse_order_item warehouse_order_item_cargo_type_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5135,7 +5308,7 @@ ALTER TABLE ONLY port_p6.warehouse_order_item
 
 
 --
--- TOC entry 5133 (class 2606 OID 16707)
+-- TOC entry 5154 (class 2606 OID 16707)
 -- Name: warehouse_order_item warehouse_order_item_unit_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5144,7 +5317,7 @@ ALTER TABLE ONLY port_p6.warehouse_order_item
 
 
 --
--- TOC entry 5134 (class 2606 OID 16697)
+-- TOC entry 5155 (class 2606 OID 16697)
 -- Name: warehouse_order_item warehouse_order_item_warehouse_order_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5153,7 +5326,7 @@ ALTER TABLE ONLY port_p6.warehouse_order_item
 
 
 --
--- TOC entry 5131 (class 2606 OID 16683)
+-- TOC entry 5152 (class 2606 OID 16683)
 -- Name: warehouse_order warehouse_order_responsible_emp_id_fkey; Type: FK CONSTRAINT; Schema: port_p6; Owner: -
 --
 
@@ -5162,7 +5335,7 @@ ALTER TABLE ONLY port_p6.warehouse_order
 
 
 --
--- TOC entry 5146 (class 2606 OID 16963)
+-- TOC entry 5167 (class 2606 OID 16963)
 -- Name: cargo_operation cargo_operation_consignee_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5171,7 +5344,7 @@ ALTER TABLE ONLY port_p7.cargo_operation
 
 
 --
--- TOC entry 5147 (class 2606 OID 16958)
+-- TOC entry 5168 (class 2606 OID 16958)
 -- Name: cargo_operation cargo_operation_consignor_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5180,7 +5353,7 @@ ALTER TABLE ONLY port_p7.cargo_operation
 
 
 --
--- TOC entry 5149 (class 2606 OID 16978)
+-- TOC entry 5170 (class 2606 OID 16978)
 -- Name: cargo_operation_item cargo_operation_item_cargo_operation_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5189,7 +5362,7 @@ ALTER TABLE ONLY port_p7.cargo_operation_item
 
 
 --
--- TOC entry 5150 (class 2606 OID 16983)
+-- TOC entry 5171 (class 2606 OID 16983)
 -- Name: cargo_operation_item cargo_operation_item_cargo_type_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5198,7 +5371,7 @@ ALTER TABLE ONLY port_p7.cargo_operation_item
 
 
 --
--- TOC entry 5151 (class 2606 OID 16988)
+-- TOC entry 5172 (class 2606 OID 16988)
 -- Name: cargo_operation_item cargo_operation_item_unit_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5207,7 +5380,7 @@ ALTER TABLE ONLY port_p7.cargo_operation_item
 
 
 --
--- TOC entry 5148 (class 2606 OID 16953)
+-- TOC entry 5169 (class 2606 OID 16953)
 -- Name: cargo_operation cargo_operation_vessel_call_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5216,7 +5389,7 @@ ALTER TABLE ONLY port_p7.cargo_operation
 
 
 --
--- TOC entry 5137 (class 2606 OID 16795)
+-- TOC entry 5158 (class 2606 OID 16795)
 -- Name: fee_type fee_type_unit_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5225,7 +5398,16 @@ ALTER TABLE ONLY port_p7.fee_type
 
 
 --
--- TOC entry 5158 (class 2606 OID 17066)
+-- TOC entry 5181 (class 2606 OID 17091)
+-- Name: port_department port_department_parent_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
+--
+
+ALTER TABLE ONLY port_p7.port_department
+    ADD CONSTRAINT port_department_parent_id_fkey FOREIGN KEY (parent_id) REFERENCES port_p7.port_department(id) ON UPDATE CASCADE ON DELETE RESTRICT;
+
+
+--
+-- TOC entry 5179 (class 2606 OID 17066)
 -- Name: stock_balance stock_balance_cargo_type_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5234,7 +5416,7 @@ ALTER TABLE ONLY port_p7.stock_balance
 
 
 --
--- TOC entry 5159 (class 2606 OID 17071)
+-- TOC entry 5180 (class 2606 OID 17071)
 -- Name: stock_balance stock_balance_unit_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5243,7 +5425,16 @@ ALTER TABLE ONLY port_p7.stock_balance
 
 
 --
--- TOC entry 5141 (class 2606 OID 16907)
+-- TOC entry 5182 (class 2606 OID 17106)
+-- Name: user_logs user_logs_employee_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
+--
+
+ALTER TABLE ONLY port_p7.user_logs
+    ADD CONSTRAINT user_logs_employee_id_fkey FOREIGN KEY (employee_id) REFERENCES port_p7.employee(id) ON UPDATE CASCADE ON DELETE RESTRICT;
+
+
+--
+-- TOC entry 5162 (class 2606 OID 16907)
 -- Name: vessel_call vessel_call_berth_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5252,7 +5443,7 @@ ALTER TABLE ONLY port_p7.vessel_call
 
 
 --
--- TOC entry 5142 (class 2606 OID 16912)
+-- TOC entry 5163 (class 2606 OID 16912)
 -- Name: vessel_call vessel_call_dispatcher_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5261,7 +5452,7 @@ ALTER TABLE ONLY port_p7.vessel_call
 
 
 --
--- TOC entry 5144 (class 2606 OID 16935)
+-- TOC entry 5165 (class 2606 OID 16935)
 -- Name: vessel_call_service vessel_call_service_fee_type_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5270,7 +5461,7 @@ ALTER TABLE ONLY port_p7.vessel_call_service
 
 
 --
--- TOC entry 5145 (class 2606 OID 16930)
+-- TOC entry 5166 (class 2606 OID 16930)
 -- Name: vessel_call_service vessel_call_service_vessel_call_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5279,7 +5470,7 @@ ALTER TABLE ONLY port_p7.vessel_call_service
 
 
 --
--- TOC entry 5143 (class 2606 OID 16902)
+-- TOC entry 5164 (class 2606 OID 16902)
 -- Name: vessel_call vessel_call_vessel_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5288,7 +5479,7 @@ ALTER TABLE ONLY port_p7.vessel_call
 
 
 --
--- TOC entry 5138 (class 2606 OID 16880)
+-- TOC entry 5159 (class 2606 OID 16880)
 -- Name: vessel vessel_ship_owner_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5297,7 +5488,7 @@ ALTER TABLE ONLY port_p7.vessel
 
 
 --
--- TOC entry 5139 (class 2606 OID 16885)
+-- TOC entry 5160 (class 2606 OID 16885)
 -- Name: vessel vessel_vessel_status_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5306,7 +5497,7 @@ ALTER TABLE ONLY port_p7.vessel
 
 
 --
--- TOC entry 5140 (class 2606 OID 16875)
+-- TOC entry 5161 (class 2606 OID 16875)
 -- Name: vessel vessel_vessel_type_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5315,7 +5506,7 @@ ALTER TABLE ONLY port_p7.vessel
 
 
 --
--- TOC entry 5152 (class 2606 OID 17013)
+-- TOC entry 5173 (class 2606 OID 17013)
 -- Name: warehouse_order warehouse_order_consignee_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5324,7 +5515,7 @@ ALTER TABLE ONLY port_p7.warehouse_order
 
 
 --
--- TOC entry 5153 (class 2606 OID 17008)
+-- TOC entry 5174 (class 2606 OID 17008)
 -- Name: warehouse_order warehouse_order_consignor_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5333,7 +5524,7 @@ ALTER TABLE ONLY port_p7.warehouse_order
 
 
 --
--- TOC entry 5155 (class 2606 OID 17040)
+-- TOC entry 5176 (class 2606 OID 17040)
 -- Name: warehouse_order_item warehouse_order_item_cargo_type_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5342,7 +5533,7 @@ ALTER TABLE ONLY port_p7.warehouse_order_item
 
 
 --
--- TOC entry 5156 (class 2606 OID 17045)
+-- TOC entry 5177 (class 2606 OID 17045)
 -- Name: warehouse_order_item warehouse_order_item_unit_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5351,7 +5542,7 @@ ALTER TABLE ONLY port_p7.warehouse_order_item
 
 
 --
--- TOC entry 5157 (class 2606 OID 17035)
+-- TOC entry 5178 (class 2606 OID 17035)
 -- Name: warehouse_order_item warehouse_order_item_warehouse_order_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5360,7 +5551,7 @@ ALTER TABLE ONLY port_p7.warehouse_order_item
 
 
 --
--- TOC entry 5154 (class 2606 OID 17018)
+-- TOC entry 5175 (class 2606 OID 17018)
 -- Name: warehouse_order warehouse_order_responsible_emp_id_fkey; Type: FK CONSTRAINT; Schema: port_p7; Owner: -
 --
 
@@ -5368,7 +5559,7 @@ ALTER TABLE ONLY port_p7.warehouse_order
     ADD CONSTRAINT warehouse_order_responsible_emp_id_fkey FOREIGN KEY (responsible_emp_id) REFERENCES port_p7.employee(id) ON UPDATE CASCADE ON DELETE RESTRICT;
 
 
--- Completed on 2026-09-27 22:36:21
+-- Completed on 2026-09-29 15:07:30
 
 --
 -- PostgreSQL database dump complete
